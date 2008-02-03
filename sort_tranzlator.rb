@@ -24,9 +24,14 @@ def yaml_quote(string)
   end
 end
 
+output = STDOUT
+if ARGV.length == 1
+  output = File.open(ARGV[0], 'w')
+end
+
 tranzlator.keys.sort.each do |key|
   value = tranzlator[key]
   key = yaml_quote(key)
   value = yaml_quote(value)
-  puts "#{key}: #{value}"
+  output.puts "#{key}: #{value}"
 end
