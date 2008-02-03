@@ -5,17 +5,15 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.apple.dictionary.MySample</string>
+	<string>org.dribin.dave.dictionary.lolspeak</string>
 	<key>CFBundleName</key>
-	<string>MyDictionary</string>
+	<string>LOLspeak</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>DCSDictionaryCopyright</key>
-	<string>Copyright © 2007 Apple Inc.</string>
+	<string>Copyright © 2007 Dave Dribin</string>
 	<key>DCSDictionaryManufacturerName</key>
-	<string>Apple Inc.</string>
-	<key>DCSDictionaryFrontMatterReferenceID</key>
-	<string>front_back_matter</string>
+	<string>Dave Dribin</string>
 	<key>DCSDictionaryPrefsHTML</key>
 	<string>MyDictionary_prefs.html</string>
 	<key>DCSDictionaryXSL</key>
