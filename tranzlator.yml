@@ -1,6 +1,7 @@
 a: ""
 about: bout
 account: akownt
+accounting: accouting
 accusation: accusashun
 acquisition: acquizishun
 actual: akshul
@@ -13,6 +14,7 @@ agrees: agreez
 allowing: allowin
 alternating: alternatin
 and: an
+annoucing: annoucin
 announced: announcd
 annoying: annoyin
 another: anothr
@@ -25,6 +27,7 @@ are: r
 articles: articlez
 asisted: assistd
 attitudes: attitudez
+authored: authord
 autosaving: autosavin
 awesome: awsum
 back: bak
@@ -34,6 +37,7 @@ bandwidth: bandwif
 based: basd
 be: bees
 beaing: bessing
+because: cuz
 before: "b4"
 believe: bleev
 believes: believez
@@ -65,6 +69,7 @@ compensation: compensashun
 complained: complaind
 compromised: compromisd
 computer: computr
+concludes: concludez
 conclusion: conclushun
 confessing: confessin
 configuration: configurashun
@@ -74,6 +79,7 @@ consumer: consumr
 consumes: consumez
 consuming: consumin
 consummated: consummatd
+contacted: contactd
 continues: continuez
 controller: controllr
 controversial: controvershul
@@ -139,6 +145,7 @@ evokes: evokez
 exactly: egsaktly
 examination: examinashun
 excellent: awsum
+exception: excepshun
 excited: ecitd
 exciting: excitin
 exhaustive: exhaustiv
@@ -156,6 +163,7 @@ featuring: featurin
 feed: fed
 feel: feelz
 files: filez
+financial: finanshul
 first: furst
 fixing: fixin
 following: followin
@@ -177,7 +185,9 @@ give: giv
 goes: goez
 going: goin
 good: gud
+graphic: grafic
 graphics: grafic
+gratification: gratificashun
 gruber: groober
 guess: gues
 half: haf
@@ -210,6 +220,8 @@ improved: improovd
 inception: incepshun
 included: includd
 includes: includez
+including: includin
+indicated: indicatd
 innocent: innosent
 installation: installashun
 installing: installin
@@ -247,10 +259,12 @@ love: luv
 lovely: luvly
 lucrative: lucrativ
 maintained: maintaind
+make: mak
 makes: makez
 making: makin
 many: "lotz da"
 market: markit
+marketing: marketin
 meaning: meanin
 means: meanz
 measuring: measurin
@@ -324,6 +338,7 @@ positive: positiv
 posted: postd
 pounced: pouncd
 precious: preshus
+prediction: predicshun
 presentation: presentashun
 press: pres
 pretty: pritee
@@ -332,6 +347,7 @@ prices: pricez
 printing: printin
 production: producshun
 products: productz
+profressional: profeshunal
 profressionals: profeshunals
 programming: programmin
 promising: promisun
@@ -378,12 +394,14 @@ says: sez
 scaling: scalin
 scared: skerd
 scheduled: scheduld
+scheduling: schedulin
 scripting: scriptin
 searching: searchin
 section: secshun
 see: c
 seeing: seein
 seems: seemz
+sees: seez
 sepbember: septembr
 server: servr
 servers: servrz
@@ -464,6 +482,7 @@ typing: typin
 typograhy: tyopgrafy
 until: til
 updated: updatd
+updates: updatez
 uses: usez
 using: usin
 utter: uttr
@@ -473,6 +492,7 @@ versionable: vershunable
 versions: vershuns
 very: vary
 videotapes: videotapez
+videotaping: videotapin
 virtualization: virtualizashun
 vivisectin: vivisecshun
 waiting: waitin
