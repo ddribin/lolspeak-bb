@@ -1,5 +1,7 @@
 #!/usr/bin/ruby
 
+$KCODE = 'UTF8'
+
 require 'yaml'
 
 require 'rubygems'	
