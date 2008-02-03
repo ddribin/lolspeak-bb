@@ -4,9 +4,6 @@ $KCODE = 'UTF8'
 
 require 'yaml'
 
-require 'rubygems'	
-gem 'builder', '~> 2.0'
-
 class Hash
   def to_apple_dictionary(io = STDOUT)
     io.puts '<?xml version="1.0" encoding="UTF-8"?>'
