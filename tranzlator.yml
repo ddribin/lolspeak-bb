@@ -11,6 +11,7 @@ advertising: advertisin
 after: aftr
 agrees: agreez
 allowing: allowin
+alternating: alternatin
 and: an
 announced: announcd
 annoying: annoyin
@@ -33,6 +34,7 @@ bandwidth: bandwif
 based: basd
 be: bees
 beaing: bessing
+before: "b4"
 believe: bleev
 believes: believez
 better: bettr
@@ -42,6 +44,7 @@ birthday: birfdai
 "book's": bookz
 bought: buyd
 bow: bowage
+branching: branchin
 branding: brandin
 bring: brin
 browser: browsr
@@ -55,6 +58,7 @@ checking: checkin
 clever: clevr
 closing: closin
 coincides: coincidez
+collections: collecshuns
 comes: comez
 companies: companiez
 compensation: compensashun
@@ -73,6 +77,7 @@ consummated: consummatd
 continues: continuez
 controller: controllr
 controversial: controvershul
+convention: convenshun
 conversions: convershuns
 convinced: convincd
 corporation: corporashun
@@ -82,6 +87,7 @@ criticism: critisizm
 daring: darin
 days: dais
 dead: ded
+decided: decidd
 decision: decishun
 dedicated: dedicatd
 delivering: deliverin
@@ -101,6 +107,7 @@ devices: devicez
 dimension: dimenshun
 direction: direcshun
 directions: direcshuns
+directories: directoriez
 disabled: diabld
 discovered: discoverd
 discussion: discushun
@@ -114,6 +121,8 @@ done: dun
 downgrading: downgradin
 downloading: downloadin
 downloads: downloadz
+drive: driv
+during: daruin
 eclipsing: eclipsin
 either: eithr
 enabling: enablin
@@ -123,6 +132,7 @@ ends: endz
 enhanced: enhancd
 enjoying: enjoyin
 entries: entriez
+enumeration: enumerashun
 ever: evr
 everything: everythin
 evokes: evokez
@@ -182,6 +192,7 @@ heads: headz
 heard: herd
 hearwarming: heartwarmin
 help: halp
+helping: helpin
 here: her
 higher: highr
 himself: him
@@ -194,6 +205,7 @@ however: howevr
 illustration: illustrashun
 imaginig: imaginin
 imagining: imaginin
+implementation: implementashun
 improved: improovd
 inception: incepshun
 included: includd
@@ -212,10 +224,12 @@ its: itz
 "i’m": me
 jiminy: omgwtfbbq
 joined: joind
+jostling: jostlin
 judging: judgin
 just: jus
 know: knoe
 labelled: labeld
+latter: lattr
 learning: lernin
 less: les
 levereaging: leveragin
@@ -263,6 +277,7 @@ nothing: nothin
 notification: notificashun
 notifications: notificashuns
 now: nao
+number: numbr
 numbered: numbrd
 numbers: numberz
 observation: observashun
@@ -274,6 +289,7 @@ oh: o
 ok: k
 one: wan
 operating: operatin
+operation: operashun
 optimized: optimizd
 option: opshun
 order: ordr
@@ -281,6 +297,7 @@ other: othr
 outstanding: outstandin
 over: ovar
 overcarged: overchargd
+overheating: overheatin
 overtures: overturez
 owned: ownd
 owner: ownr
@@ -301,6 +318,7 @@ phones: fonez
 photographers: fotografers
 photos: fotos
 planning: plannin
+playing: playin
 pointing: pointin
 positive: positiv
 posted: postd
@@ -318,6 +336,7 @@ profressionals: profeshunals
 programming: programmin
 promising: promisun
 promotional: promoshunal
+publishing: publishin
 putting: puttin
 puutting: puttin
 quarter: quartr
@@ -343,6 +362,8 @@ reporing: reportin
 resentations: presentashuns
 resources: resourcez
 respected: respectd
+retention: retenshun
+revolution: revolushun
 right: rite
 rotation: rotashun
 rumors: rumorz
@@ -368,6 +389,7 @@ server: servr
 servers: servrz
 service: survis
 shipping: shippin
+shocking: shockin
 should: shud
 site: siet
 sites: siets
@@ -383,13 +405,16 @@ special: speshul
 specter: spectr
 speculation: speculashun
 specutlitve: speculativ
+stashing: stashin
 station: stashun
 stations: stashuns
 stepped: steppd
+sticking: stickin
 stocked: stockd
 striking: strikin
 stronger: strongr
 substring: substrin
+subversion: subvershun
 suffer: suffr
 suprise: surprize
 surprising: surprisn
@@ -401,6 +426,7 @@ take: taek
 takover: takeovr
 taping: tapin
 teams: teamz
+techniques: techniquez
 telling: tellin
 thanks: thx
 that: dat
@@ -429,6 +455,7 @@ tracks: trackz
 transcript: tranzscript
 translate: tranzlate
 translator: tranzlator
+tried: trid
 tuesday: tuesdai
 turned: turnd
 twitter: twittr
@@ -442,14 +469,17 @@ using: usin
 utter: uttr
 vending: vendin
 version: vershun
+versionable: vershunable
 versions: vershuns
 very: vary
 videotapes: videotapez
 virtualization: virtualizashun
 vivisectin: vivisecshun
 waiting: waitin
+waking: wakin
 want: wants
 was: wuz
+watching: watchin
 way: wai
 "we'll": well
 "we're": were
@@ -461,6 +491,7 @@ were: wuz
 what: wut
 where: wer
 who: hoo
+why: y
 windows: windowz
 with: wif
 wnated: wantd
@@ -474,6 +505,7 @@ world: wurld
 worst: wurst
 worth: wurth
 would: wud
+write: rite
 written: writteh
 year: yer
 years: yeers
