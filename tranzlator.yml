@@ -27,7 +27,6 @@ illustration: illustrashun
 lovely: luvly
 consumer: consumr
 jiminy: omgwtfbbq
-then: den
 oh: o 
 really: rly
 bow: bowage
@@ -101,7 +100,7 @@ guess: gues
 agrees: agreez
 holding: holdin
 says: sez
-yes: yez
+"yes": yez
 do: doez
 admission: admishun
 however: howevr
@@ -208,6 +207,7 @@ function: funcshun
 sutied: suitd
 printing: printin
 server: servr
+servers: servrz
 perfect: perfik
 distributed: distributd
 teams: teamz
@@ -344,5 +344,6 @@ notification: notificashun
 corporation: corporashun
 live: liv
 joined: joind
-"mr": mistah
+mr: mistah
 feature: feachur
+maintained: maintaind
