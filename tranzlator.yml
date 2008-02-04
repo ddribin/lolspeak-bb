@@ -6,6 +6,7 @@ accusation: accusashun
 acquisition: acquizishun
 actual: akshul
 actually: akshully
+addition: addishun
 adds: addz
 administration: administrashun
 admission: admishun
@@ -73,6 +74,7 @@ coincides: coincidez
 collections: collecshuns
 comes: comez
 coming: comin
+commercial: commershul
 companies: companiez
 compensation: compensashun
 competing: competin
@@ -100,6 +102,7 @@ corporation: corporashun
 could: cud
 crendital: credenshul
 criticism: critisizm
+crumbling: crumblin
 customer: customr
 cutting: cuttin
 daring: darin
@@ -124,12 +127,14 @@ developer: developr
 developers: developrz
 devices: devicez
 "didn't": didnt
+diluted: dilutd
 dimension: dimenshun
 dinner: dinnr
 direction: direcshun
 directions: direcshuns
 directories: directoriez
 disabled: diabld
+disagreeing: disagreein
 discovered: discoverd
 discussion: discushun
 disliked: dislikd
@@ -147,6 +152,7 @@ drive: driv
 drowned: drownd
 during: durin
 eclipsing: eclipsin
+edition: edishun
 either: eithr
 enabling: enablin
 encountering: encounterin
@@ -155,9 +161,11 @@ endorsed: endorsd
 endorsing: endorsin
 ends: endz
 enhanced: enhancd
+enhances: enhanez
 enjoying: enjoyin
 entries: entriez
 enumeration: enumerashun
+essential: essenshul
 ever: evr
 everyone: evryone
 everything: everythin
@@ -183,6 +191,8 @@ features: featurez
 featuring: featurin
 feed: fed
 feel: feelz
+feeling: feelin
+fever: fevr
 files: filez
 financial: finanshul
 first: furst
@@ -204,6 +214,7 @@ gestures: gesturez
 get: git
 getting: gettin
 giant: hooj
+girl: gurl
 give: giv
 goes: goez
 going: goin
@@ -258,6 +269,7 @@ integration: integrashn
 interested: interestd
 interesting: interestin
 internet: internets
+introducing: introducin
 involved: involvd
 iphone: ifone
 is: iz
@@ -271,6 +283,7 @@ joined: joind
 jostling: jostlin
 judging: judgin
 just: jus
+kicking: kickin
 know: knoe
 labelled: labeld
 later: latr
@@ -285,6 +298,7 @@ like: liek
 liked: likd
 lined: lind
 links: linkz
+listened: listend
 little: lil
 live: liv
 living: livin
@@ -323,6 +337,7 @@ my: mah
 name: naym
 need: ned
 needs: needz
+neither: neithr
 network: netwerk
 never: nevr
 new: nu
@@ -339,6 +354,7 @@ numbers: numberz
 observation: observashun
 october: octobr
 of: ov
+offended: offendd
 offer: offr
 offered: offrd
 oh: o
@@ -375,6 +391,7 @@ phone: fone
 phones: fonez
 photographers: fotografers
 photos: fotos
+physicist: fysicist
 planning: plannin
 playing: playin
 pointing: pointin
@@ -403,6 +420,7 @@ programming: programmin
 promising: promisun
 promotional: promoshunal
 publishing: publishin
+pulling: pullin
 pumping: pumpin
 putting: puttin
 puutting: puttin
@@ -427,12 +445,15 @@ removed: removd
 rendering: rendrin
 renowned: renownd
 reporing: reportin
+representing: representin
+requested: requestd
 resentations: presentashuns
 resisting: resistn
 resources: resourcez
 respected: respectd
 retention: retenshun
 revolution: revolushun
+revolutionary: revolushunary
 right: rite
 rotation: rotashun
 rumors: rumorz
@@ -459,6 +480,7 @@ seeing: seein
 seemed: seemd
 seems: seemz
 sees: seez
+"self's": selfs
 sepbember: septembr
 server: servr
 servers: servrz
@@ -467,6 +489,7 @@ shipping: shippin
 shocking: shockin
 should: shud
 showing: showin
+silver: silvr
 site: siet
 sites: siets
 six: "6"
@@ -475,6 +498,7 @@ slumping: slumpin
 social: soshul
 some: sum
 something: somethin
+sorry: sry
 sounds: soundz
 sources: sourcez
 special: speshul
@@ -484,6 +508,7 @@ specutlitve: speculativ
 stashing: stashin
 station: stashun
 stations: stashuns
+stealing: stealin
 stepped: steppd
 sticking: stickin
 stocked: stockd
@@ -491,6 +516,7 @@ stories: storiez
 striking: strikin
 stronger: strongr
 structure: strucchur
+stunning: stunnin
 substring: substrin
 subversion: subvershun
 suffer: suffr
@@ -504,6 +530,7 @@ synching: synchin
 system: sistem
 tagging: taggin
 take: taek
+takes: takez
 takover: takeovr
 taping: tapin
 teams: teamz
@@ -525,9 +552,11 @@ thursday: thursdai
 time: tiem
 times: tiems
 timing: timin
+tinker: tinkr
 to: "2"
 today: todai
 together: togehtr
+tonight: tonite
 too: "2"
 tossup: tosup
 touches: touchez
@@ -546,6 +575,7 @@ twitter: twittr
 two: "2"
 typing: typin
 typograhy: tyopgrafy
+under: undr
 until: til
 unwise: unwize
 updated: updatd
@@ -560,6 +590,7 @@ versions: vershuns
 very: vary
 videotapes: videotapez
 videotaping: videotapin
+vindicated: vindicatd
 virtualization: virtualizashun
 vivisectin: vivisecshun
 voting: votin
@@ -584,11 +615,13 @@ why: y
 windows: windowz
 with: wif
 wnated: wantd
+wonder: wondr
 wondering: wonderin
 word: werd
 words: werdz
 work: werk
 workaround: werkaround
+worked: werkd
 working: werkin
 works: werkz
 world: wurld
