@@ -128,8 +128,22 @@ EXPECTED
     expected = {"hi" => "oh hai", "cat" => "kitteh"}
     assert_equal expected, t.traced_words
     
-    t.clear_trace
+    t.clear_traced_words
     expected = {}
     assert_equal expected, t.traced_words
+  end
+  
+  def test_heuristics
+    t = new_tranzlator
+    t.try_heuristics = true
+    assert_equal "the mothr of invenshun",
+      t.translate_words("the mother of invention")
+
+    expected = {"mother" => "mothr", "invention" => "invenshun"}
+    assert_equal expected, t.translated_heuristics
+    
+    expected = {}
+    t.clear_translated_heuristics
+    assert_equal expected, t.translated_heuristics
   end
 end

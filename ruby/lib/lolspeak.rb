@@ -5,8 +5,8 @@ module LOLspeak
   VERSION = "1.0.0"
   
   class Tranzlator
-    attr_accessor :trace
-    attr_reader :traced_words
+    attr_accessor :trace, :try_heuristics
+    attr_reader :traced_words, :translated_heuristics
     
     class << Tranzlator
       def from_file(file)
@@ -18,25 +18,53 @@ module LOLspeak
     def initialize(dictionary)
       @dictionary = dictionary
       @traced_words = {}
+      @try_heuristics = false
+      @translated_heuristics = {}
     end
-    
+
     def translate_word(word)
       word = word.downcase
       lol_word = @dictionary[word]
       if lol_word.nil?
         lol_word = @dictionary[word.gsub("’", "'")]
       end
+      
+      if lol_word.nil? and @try_heuristics
+        if (word =~ /(.*)tion(s?)$/)
+          lol_word = "#{$1}shun#{$2}"
+        elsif (word =~ /(.*)ed$/)
+          lol_word = "#{$1}d"
+        elsif (word =~ /(.*)ing$/)
+          lol_word = "#{$1}in"
+        elsif (word =~ /(.*)ss$/)
+          lol_word = "#{$1}s"
+        elsif (word =~ /(.*)er$/)
+          lol_word = "#{$1}r"
+        elsif (word =~ /^([0-9A-Za-z_]+)s$/)
+          lol_word = "#{$1}z"
+        end
+        if !lol_word.nil?
+          @translated_heuristics[word] = lol_word
+        end
+      end
+
       if lol_word.nil?
         lol_word = word
       else
         @traced_words[word] = lol_word
       end
+
       return lol_word
     end
     
-    def clear_trace
+    def clear_traced_words
       @traced_words = {}
     end
+    
+    def clear_translated_heuristics
+      @translated_heuristics = {}
+    end
+    
     
     def translate_words(words)
       lol_words = words.gsub(/(\w[\w’\']*)(\s*)/) do
