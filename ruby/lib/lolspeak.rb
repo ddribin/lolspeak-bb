@@ -1,7 +1,7 @@
 require 'yaml'
 require 'rexml/document'
 
-module LOLSpeak
+module LOLspeak
   class Tranzlator
     class << Tranzlator
       def from_file(file)
@@ -75,21 +75,21 @@ end
 
 class String
   def to_lolspeak
-    return LOLSpeak::default_tranzlator.translate_words(self)
+    return LOLspeak::default_tranzlator.translate_words(self)
   end
   
   def xml_to_lolspeak
-    return LOLSpeak::default_tranzlator.translate_xml_string(self)
+    return LOLspeak::default_tranzlator.translate_xml_string(self)
   end
 end
 
 class REXML::Element
   def to_lolspeak!
-    LOLSpeak::default_tranzlator.translate_xml_element!(self)
+    LOLspeak::default_tranzlator.translate_xml_element!(self)
   end
   
   def to_lolspeak_recursive!
-    t = LOLSpeak::default_tranzlator
+    t = LOLspeak::default_tranzlator
 #    t.translate_xml_element!(self)
     t.translate_xml_element_recursive!(self)
   end

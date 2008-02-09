@@ -6,11 +6,11 @@ class TranzlatorTest < Test::Unit::TestCase
   def new_tranzlator
     data_dir = File.join(File.dirname(__FILE__), "data")
     yaml = File.join(data_dir, "tranzlator.yml")
-    return LOLSpeak::Tranzlator.from_file(yaml)
+    return LOLspeak::Tranzlator.from_file(yaml)
   end
   
   def test_creation
-    tranzlator = LOLSpeak::Tranzlator.new(nil)
+    tranzlator = LOLspeak::Tranzlator.new(nil)
     assert_not_nil tranzlator
   end
   
@@ -69,13 +69,13 @@ class TranzlatorTest < Test::Unit::TestCase
   end
   
   def test_string_to_lolspeak
-    LOLSpeak.default_tranzlator = new_tranzlator
+    LOLspeak.default_tranzlator = new_tranzlator
     assert_equal "oh hai, me eating it’s cheezeburger",
       "Hi, I'm eating it’s cheeseburger".to_lolspeak
   end
   
   def test_xml_element_recursive_to_lolspeak
-    LOLSpeak.default_tranzlator = new_tranzlator
+    LOLspeak.default_tranzlator = new_tranzlator
     xml = <<-XML
     <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
     XML
@@ -89,7 +89,7 @@ class TranzlatorTest < Test::Unit::TestCase
   end
   
   def test_xml_element_to_lolspeak
-    LOLSpeak.default_tranzlator = new_tranzlator
+    LOLspeak.default_tranzlator = new_tranzlator
     xml = <<-XML
     <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
     XML
@@ -103,7 +103,7 @@ class TranzlatorTest < Test::Unit::TestCase
   end
   
   def test_xml_document_to_lolspeak
-    LOLSpeak.default_tranzlator = new_tranzlator
+    LOLspeak.default_tranzlator = new_tranzlator
     xml = <<-XML
 <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
 XML
@@ -117,7 +117,7 @@ EXPECTED
   end
   
   def test_default_tranzlator
-    LOLSpeak.default_tranzlator = nil
-    assert_not_nil LOLSpeak.default_tranzlator
+    LOLspeak.default_tranzlator = nil
+    assert_not_nil LOLspeak.default_tranzlator
   end
 end
