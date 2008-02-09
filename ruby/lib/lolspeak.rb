@@ -1,4 +1,5 @@
 require 'yaml'
+require 'rexml/document'
 
 module LOLSpeak
   class Tranzlator
@@ -35,6 +36,20 @@ module LOLSpeak
         lol_word
       end
       return lol_words
+    end
+  
+    def translate_xml_element(xml_element)
+      xml_element.texts.each do |text|
+        string = text.value
+        string = self.translate_words(string)
+        text.replace_with(REXML::Text.new(string))
+      end
+    end
+  
+    def translate_xml_string(xml_string)
+      xml_doc = REXML::Document.new xml_string
+      xml_doc.each_recursive { |e| translate_xml_element(e) }
+      return xml_doc.to_s
     end
   end
 

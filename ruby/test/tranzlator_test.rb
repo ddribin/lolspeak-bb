@@ -55,6 +55,18 @@ class TranzlatorTest < Test::Unit::TestCase
       t.translate_words("Hi, I'm a cat!  Your eating it’s cheeseburger")
   end
   
+  def test_tranzlate_xml_string
+    t = new_tranzlator
+    xml = <<-XML
+<cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+XML
+    expected = <<-EXPECTED
+<cat cheeseburger='hi'>kitteh <b>cheezeburger</b> oh hai</cat>
+EXPECTED
+    
+    assert_equal expected, t.translate_xml_string(xml)
+  end
+  
   def test_string_to_lolspeak
     LOLSpeak.default_tranzlator = new_tranzlator
     assert_equal "oh hai, me eating it’s cheezeburger",
