@@ -12,11 +12,13 @@ acquired: acquird
 acquiring: acquirin
 acquisition: acquizishun
 across: acros
-actions: acshuns
+action: akshun
+actions: akshuns
 actual: akshul
 actually: akshully
 added: addd
 addition: addishun
+additions: addishuns
 address: addres
 adds: addz
 administration: administrashun
@@ -35,6 +37,7 @@ agrees: agreez
 allowed: allowd
 allowing: allowin
 alternating: alternatin
+alternative: alternativ
 alternatives: alternativez
 always: alwayz
 analyzing: analyzin
@@ -47,6 +50,7 @@ annoyed: annoyd
 annoying: annoyin
 another: anothr
 answering: answerin
+answers: anzwrs
 anticipated: anticipatd
 anticipation: anticipashun
 anything: anythin
@@ -57,17 +61,20 @@ applications: applicashuns
 applies: appliez
 approved: approvd
 aquantive: aquantiv
+architecture: architecchur
 archive: archiv
 are: r
 articles: articlez
 asisted: assistd
 assembling: assemblin
 assets: assetz
+assimilation: assimilashun
 assumed: assumd
 assuming: assumin
 astonishing: astonishin
 attached: attachd
 attempting: attemptin
+attention: attenshun
 attitudes: attitudez
 authentication: authenticashun
 authored: authord
@@ -95,6 +102,7 @@ before: "b4"
 being: bein
 believe: bleev
 believes: believez
+believing: believin
 belongs: belongz
 benchmarks: benchmarkz
 better: bettr
@@ -159,10 +167,10 @@ collections: collecshuns
 combination: combinashun
 comes: comez
 coming: comin
-comission: commishun
 comments: commentz
 commercial: commershul
 commercials: commershuls
+commission: commishun
 communicated: speekd
 companies: companiez
 compelling: compellin
@@ -173,9 +181,11 @@ compilation: compilashun
 complained: complaind
 complains: complainz
 complaints: complaintz
+completed: completd
 complicated: complicatd
 components: componentz
 comprised: comprisd
+compromise: compromize
 compromised: compromisd
 computer: computr
 computers: computerz
@@ -219,7 +229,12 @@ coordination: coordinashun
 corporation: corporashun
 could: cud
 crapped: crappd
+created: creatd
 creating: creatin
+creation: creashun
+creations: creashuns
+credential: credenshul
+credentials: credenshuls
 crendital: credenshul
 criticism: critisizm
 crumbling: crumblin
@@ -241,6 +256,7 @@ deduction: deducshun
 deductions: deducshuns
 defective: defectiv
 delicious: delishus
+delivered: deliverd
 delivering: deliverin
 denver: denvr
 denying: denyin
@@ -276,6 +292,7 @@ discovered: discoverd
 discussion: discushun
 disliked: dislikd
 dismissed: dismissd
+dismissing: dismissin
 displayed: displayd
 displays: displayz
 disputed: disputd
@@ -283,12 +300,15 @@ distinction: distincshun
 distributed: distributd
 distribution: distribushun
 ditched: ditchd
+division: divishun
+divisions: divishuns
 do: doez
 documentation: documentashun
 does: doez
 dogged: doggd
 doing: doin
 dollars: dollarz
+donation: donashun
 donations: donashuns
 done: dun
 "don’t": dun
@@ -393,6 +413,7 @@ first: furst
 fixed: fixd
 fixing: fixin
 flavored: flavord
+floating: floatin
 focused: focusd
 folks: folkz
 following: followin
@@ -413,6 +434,7 @@ friends: frenz
 from: frum
 front: frunt
 frustrated: frustratd
+fuck: "f&^%"
 fucking: "f&^%ing"
 full: fol
 function: funcshun
@@ -530,6 +552,7 @@ introduces: introducez
 introducing: introducin
 introduction: introducshun
 invested: investd
+investigating: investigatin
 investigative: investigativ
 involved: involvd
 iphone: ifone
@@ -581,6 +604,7 @@ licensing: licensin
 like: liek
 liked: likd
 limitation: limitashun
+limitations: limitashuns
 lined: lind
 linkblogging: linkbloggin
 links: linkz
@@ -606,6 +630,7 @@ machines: masheens
 macs: macz
 maintained: maintaind
 make: mak
+makers: makerz
 makes: makez
 making: makin
 manipulation: manipulashun
@@ -630,6 +655,7 @@ mention: menshun
 mentioned: menshund
 merchandise: merchandize
 message: mesage
+messages: mesagez
 migration: migrashun
 minded: mindd
 minds: mindz
@@ -640,6 +666,8 @@ miss: mis
 missed: misd
 misses: misez
 missing: missin
+mission: mishun
+missions: mishuns
 mocking: mockn
 models: modelz
 monday: mondai
@@ -666,12 +694,14 @@ new: nu
 news: newz
 newspaper: nespapr
 nomination: nominashun
+notes: notez
 nothing: nothin
 noticed: noticd
 notification: notificashun
 notifications: notificashuns
 noting: notin
 now: nao
+nowadays: nowadais
 nuclear: nucular
 number: numbr
 numbered: numbrd
@@ -692,6 +722,7 @@ offering: offerin
 offers: offerz
 oh: o
 ok: k
+omission: omishun
 one: wan
 opening: openin
 operating: operatin
@@ -701,6 +732,7 @@ opinions: opinionz
 opposed: opposd
 optimized: optimizd
 option: opshun
+optional: opshunal
 optionally: opshunally
 options: opshuns
 order: ordr
@@ -722,6 +754,7 @@ page: paeg
 pages: pagez
 pageviews: pageviewz
 pants: pantz
+parameter: parametr
 parsing: parsin
 participated: participatd
 pass: pas
@@ -836,6 +869,7 @@ recording: recordin
 recurring: recurrin
 reducing: reducin
 referring: referrin
+refusing: refusin
 regarding: regardin
 regardless: regardles
 rejected: rejectd
@@ -844,6 +878,7 @@ relatives: relativez
 released: releasd
 releases: releasez
 releasing: releasin
+remaining: remainin
 remarks: remarkz
 remember: remembr
 reminder: remindr
@@ -907,11 +942,13 @@ scheduling: schedulin
 score: skor
 screenshots: screenshotz
 screwed: screwd
+script: skript
 scripting: scriptin
 scripture: scripchur
 scrolling: scrollin
 searching: searchin
 seating: seatin
+seconds: secondz
 section: secshun
 sections: secshuns
 see: c
@@ -934,6 +971,8 @@ servers: servrz
 serves: servez
 service: survis
 services: servicez
+session: seshun
+sessions: seshuns
 settings: settingz
 shared: shard
 shareholders: shareholderz
@@ -950,6 +989,8 @@ silver: silvr
 sinking: sinkin
 site: siet
 sites: siets
+situation: situashun
+situations: situashuns
 six: "6"
 sized: sizd
 sketching: sketchin
@@ -1008,6 +1049,7 @@ strapped: strappd
 strategies: strategiez
 strikes: strikez
 striking: strikin
+string: strin
 stronger: strongr
 structure: strucchur
 stunning: stunnin
@@ -1155,6 +1197,8 @@ videotaping: videotapin
 vindicated: vindicatd
 violations: violashuns
 virtualization: virtualizashun
+vision: vishun
+visions: vishuns
 visited: visietd
 visualization: visualizashun
 vivisectin: vivisecshun
