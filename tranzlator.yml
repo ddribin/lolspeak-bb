@@ -1,5 +1,6 @@
 a: ""
 about: bout
+accessibility: accesibility
 accessories: accessoriez
 accomplished: accomplishd
 account: akownt
@@ -38,6 +39,7 @@ alternatives: alternativez
 always: alwayz
 analyzing: analyzin
 and: an
+animated: animatd
 animations: animashuns
 annoucing: annoucin
 announced: announcd
@@ -65,6 +67,7 @@ assumed: assumd
 assuming: assumin
 astonishing: astonishin
 attached: attachd
+attempting: attemptin
 attitudes: attitudez
 authentication: authenticashun
 authored: authord
@@ -156,6 +159,7 @@ collections: collecshuns
 combination: combinashun
 comes: comez
 coming: comin
+comission: commishun
 comments: commentz
 commercial: commershul
 commercials: commershuls
@@ -206,6 +210,7 @@ contrived: contrivd
 controller: controllr
 controversial: controvershul
 convention: convenshun
+conventional: convenshunal
 conversation: conversashun
 conversions: convershuns
 convinced: convincd
@@ -309,9 +314,11 @@ elements: elementz
 elongated: elongatd
 emphasizing: emphasizin
 employed: employd
+employees: employeez
 emulation: emulashun
 emulations: emulashuns
 enabled: enabld
+enables: enablez
 enabling: enablin
 encountering: encounterin
 encourages: encouragez
@@ -349,6 +356,7 @@ exception: excepshun
 excited: excitd
 exciting: excitin
 executing: executin
+executive: executiv
 executives: executivez
 exhaustive: exhaustiv
 existed: existd
@@ -458,6 +466,7 @@ hearing: hearin
 hearings: hearingz
 heartwarming: heartwarmin
 hearwarming: heartwarmin
+hello: "y halo thar"
 help: halp
 helped: helpd
 helping: helpin
@@ -478,6 +487,7 @@ holiday: holidai
 holidays: holidais
 hopelessly: hopelesly
 hours: hourz
+house: houz
 however: howevr
 humorless: humorles
 hundreds: hundredz
@@ -538,6 +548,7 @@ jiminy: omgwtfbbq
 jobs: jobz
 joined: joind
 joining: joinin
+joking: jokin
 jostling: jostlin
 judged: judgd
 judging: judgin
@@ -1009,6 +1020,7 @@ success: succes
 sucks: suckz
 suffer: suffr
 suffers: sufferz
+suggested: suggestd
 suggestions: sugesshuns
 suited: suitd
 super: supr
@@ -1111,6 +1123,7 @@ two: "2"
 tying: tyin
 typing: typin
 typograhy: tyopgrafy
+unapproved: unapprovd
 unboxing: unboxin
 undefeated: undefeatd
 under: undr
@@ -1125,6 +1138,7 @@ upcoming: upcomin
 updated: updatd
 updates: updatez
 upgrades: upgradez
+upper: uppr
 used: usd
 users: userz
 uses: usez
@@ -1208,4 +1222,5 @@ you: u
 "you'd": ud
 your: ur
 "you’d": ud
+zoomer: zoomr
 zooming: zommin
