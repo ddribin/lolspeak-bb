@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'lolspeak'
+
+STDIN.each { |l| puts l.to_lolspeak }
