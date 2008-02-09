@@ -3,6 +3,8 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/gempackagetask'
 
+require 'lib/lolspeak'
+
 $KCODE = "UTF-8"
 
 task :default => [:test_units]
@@ -14,7 +16,7 @@ Rake::TestTask.new("test_units") { |t|
   t.warning = true
 }
 
-PKG_VERSION = '1.0.0'
+PKG_VERSION = LOLspeak::VERSION
 PKG_FILES = FileList[
   '[A-Z]*', 
   'bin/**/*',

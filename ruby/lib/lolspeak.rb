@@ -2,6 +2,8 @@ require 'yaml'
 require 'rexml/document'
 
 module LOLspeak
+  VERSION = "1.0.0"
+  
   class Tranzlator
     class << Tranzlator
       def from_file(file)

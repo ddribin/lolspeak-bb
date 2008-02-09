@@ -17,8 +17,9 @@ class LOLspeakApp
   
   def run(argv)
     begin
-      parse_options(argv)
-      main(argv)
+      if parse_options(argv)
+        main(argv)
+      end
     rescue
       STDERR.puts "#{COMMAND}: " + $!
       return 1
@@ -39,14 +40,20 @@ class LOLspeakApp
       opts.on("-x", "--xml", "Parse file as XML") do |fileName|
         @options.xml = true
       end
-
+      
       opts.on_tail("-h", "--help", "Show this message") do
         puts opts
-        exit
+        return false
+      end
+
+      opts.on_tail("-v", "--version", "Show version") do
+        puts "#{COMMAND} #{LOLspeak::VERSION}"
+        return false
       end
     end
     
     opts.parse!(argv)
+    return true
   end
   
   def main(argv)
