@@ -33,7 +33,7 @@ class LOLspeakApp
       opts.separator ""
       opts.separator "Specific options:"
 
-      opts.on("-i", "--input FILE", "Read input from a file") do |fileName|
+      opts.on("-f", "--file FILE", "Read input from a file") do |fileName|
         @options.inputFile = fileName
       end
       
