@@ -51,8 +51,8 @@ class TranzlatorTest < Test::Unit::TestCase
 
   def test_tranzlate_words
     t = new_tranzlator
-    assert_equal "oh hai, me eating it’s cheezeburger",
-      t.translate_words("Hi, I'm eating it’s cheeseburger")
+    assert_equal "oh hai, me kitteh!  ur eating it’s cheezeburger",
+      t.translate_words("Hi, I'm a cat!  Your eating it’s cheeseburger")
   end
   
   def test_string_to_lolspeak

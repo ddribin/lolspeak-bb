@@ -26,7 +26,15 @@ module LOLSpeak
     end
     
     def translate_words(words)
-      return words.gsub(/\w[\w’\']*/) { |w| translate_word(w) }
+      lol_words = words.gsub(/(\w[\w’\']*)(\s*)/) do
+        word, space = $1, $2
+        lol_word = translate_word(word)
+
+        # Stick the space back on, as long is it's not empty
+        lol_word += space if lol_word != ""
+        lol_word
+      end
+      return lol_words
     end
   end
 
