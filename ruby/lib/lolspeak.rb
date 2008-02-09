@@ -38,17 +38,21 @@ module LOLSpeak
       return lol_words
     end
   
-    def translate_xml_element(xml_element)
+    def translate_xml_element!(xml_element)
       xml_element.texts.each do |text|
         string = text.value
         string = self.translate_words(string)
         text.replace_with(REXML::Text.new(string))
       end
     end
+
+    def translate_xml_element_recursive!(xml_element)
+      xml_element.each_recursive { |e| translate_xml_element!(e) }
+    end
   
     def translate_xml_string(xml_string)
       xml_doc = REXML::Document.new xml_string
-      xml_doc.each_recursive { |e| translate_xml_element(e) }
+      translate_xml_element_recursive!(xml_doc)
       return xml_doc.to_s
     end
   end
@@ -73,4 +77,21 @@ class String
   def to_lolspeak
     return LOLSpeak::default_tranzlator.translate_words(self)
   end
+  
+  def xml_to_lolspeak
+    return LOLSpeak::default_tranzlator.translate_xml_string(self)
+  end
 end
+
+class REXML::Element
+  def to_lolspeak!
+    LOLSpeak::default_tranzlator.translate_xml_element!(self)
+  end
+  
+  def to_lolspeak_recursive!
+    t = LOLSpeak::default_tranzlator
+#    t.translate_xml_element!(self)
+    t.translate_xml_element_recursive!(self)
+  end
+end
+

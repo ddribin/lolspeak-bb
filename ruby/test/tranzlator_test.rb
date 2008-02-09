@@ -1,4 +1,5 @@
 require 'lolspeak'
+require 'rexml/document'
 require 'test/unit'
 
 class TranzlatorTest < Test::Unit::TestCase
@@ -58,11 +59,11 @@ class TranzlatorTest < Test::Unit::TestCase
   def test_tranzlate_xml_string
     t = new_tranzlator
     xml = <<-XML
-<cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
-XML
+    <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+    XML
     expected = <<-EXPECTED
-<cat cheeseburger='hi'>kitteh <b>cheezeburger</b> oh hai</cat>
-EXPECTED
+    <cat cheeseburger='hi'>kitteh <b>cheezeburger</b> oh hai</cat>
+    EXPECTED
     
     assert_equal expected, t.translate_xml_string(xml)
   end
@@ -71,6 +72,48 @@ EXPECTED
     LOLSpeak.default_tranzlator = new_tranzlator
     assert_equal "oh hai, me eating it’s cheezeburger",
       "Hi, I'm eating it’s cheeseburger".to_lolspeak
+  end
+  
+  def test_xml_element_recursive_to_lolspeak
+    LOLSpeak.default_tranzlator = new_tranzlator
+    xml = <<-XML
+    <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+    XML
+    document = REXML::Document.new xml
+
+    expected = <<-EXPECTED
+    <cat cheeseburger='hi'>cat <b>cheezeburger</b> hi</cat>
+    EXPECTED
+    document.root.to_lolspeak_recursive!
+    assert_equal expected, document.to_s
+  end
+  
+  def test_xml_element_to_lolspeak
+    LOLSpeak.default_tranzlator = new_tranzlator
+    xml = <<-XML
+    <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+    XML
+    document = REXML::Document.new xml
+
+    expected = <<-EXPECTED
+    <cat cheeseburger='hi'>kitteh <b>cheeseburger</b> oh hai</cat>
+    EXPECTED
+    document.root.to_lolspeak!
+    assert_equal expected, document.to_s
+  end
+  
+  def test_xml_document_to_lolspeak
+    LOLSpeak.default_tranzlator = new_tranzlator
+    xml = <<-XML
+<cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+XML
+    document = REXML::Document.new xml
+
+    expected = <<-EXPECTED
+<cat cheeseburger='hi'>kitteh <b>cheezeburger</b> oh hai</cat>
+EXPECTED
+    document.to_lolspeak_recursive!
+    assert_equal expected, document.to_s
   end
   
   def test_default_tranzlator
