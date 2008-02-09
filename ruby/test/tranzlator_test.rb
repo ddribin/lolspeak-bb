@@ -120,4 +120,16 @@ EXPECTED
     LOLspeak.default_tranzlator = nil
     assert_not_nil LOLspeak.default_tranzlator
   end
+  
+  def test_trace
+    t = new_tranzlator
+    t.trace = true
+    t.translate_words("hi good cat")
+    expected = {"hi" => "oh hai", "cat" => "kitteh"}
+    assert_equal expected, t.traced_words
+    
+    t.clear_trace
+    expected = {}
+    assert_equal expected, t.traced_words
+  end
 end

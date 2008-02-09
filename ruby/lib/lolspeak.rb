@@ -5,6 +5,9 @@ module LOLspeak
   VERSION = "1.0.0"
   
   class Tranzlator
+    attr_accessor :trace
+    attr_reader :traced_words
+    
     class << Tranzlator
       def from_file(file)
         dictionary = YAML::load_file(file)
@@ -14,6 +17,7 @@ module LOLspeak
     
     def initialize(dictionary)
       @dictionary = dictionary
+      @traced_words = {}
     end
     
     def translate_word(word)
@@ -24,8 +28,14 @@ module LOLspeak
       end
       if lol_word.nil?
         lol_word = word
+      else
+        @traced_words[word] = lol_word
       end
       return lol_word
+    end
+    
+    def clear_trace
+      @traced_words = {}
     end
     
     def translate_words(words)
