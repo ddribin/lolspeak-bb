@@ -506,6 +506,7 @@ help: halp
 helped: helpd
 helping: helpin
 here: her
+"here's": heers
 heroes: heroez
 hi: "oh hai"
 higher: highr
@@ -581,6 +582,7 @@ iphone: ifone
 iphones: ifonez
 ipods: ipodz
 is: iz
+"isn't": isnt
 issues: issuez
 "it's": iz
 its: itz
@@ -1291,8 +1293,6 @@ years: yeers
 yesterday: yesterdai
 you: u
 "you'd": ud
-"isn't": isnt
-"here's": heers
 your: ur
 zoomer: zoomr
 zooming: zommin
