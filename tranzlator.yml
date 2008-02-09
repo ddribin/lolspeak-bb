@@ -134,6 +134,7 @@ burned: burnd
 business: busines
 businessweek: businesweek
 busted: bustd
+bye: kthxbye
 called: calld
 candidates: candidatez
 canned: cannd
@@ -143,10 +144,12 @@ capture: capchure
 cars: carz
 cat: kitteh
 caucuses: caucusez
+caution: caushun
 celebrating: celebratin
 cellphone: cellfone
 cents: sents
 champions: championz
+changed: changd
 changes: changez
 charging: chargin
 chatter: chattr
@@ -163,6 +166,7 @@ coding: codin
 coincides: coincidez
 collaboration: collaborashun
 colleagues: colleaguez
+collection: collecshun
 collections: collecshuns
 combination: combinashun
 comes: comez
@@ -178,6 +182,7 @@ compensation: compensashun
 competing: competin
 competition: competishun
 compilation: compilashun
+compiled: compild
 complained: complaind
 complains: complainz
 complaints: complaintz
@@ -223,6 +228,7 @@ convention: convenshun
 conventional: convenshunal
 conversation: conversashun
 conversions: convershuns
+converted: convertd
 convinced: convincd
 coordinates: coordinatez
 coordination: coordinashun
@@ -255,6 +261,8 @@ dedicated: dedicatd
 deduction: deducshun
 deductions: deducshuns
 defective: defectiv
+definition: definishun
+definitions: definishuns
 delicious: delishus
 delivered: deliverd
 delivering: deliverin
@@ -358,6 +366,7 @@ entries: entriez
 enumeration: enumerashun
 equation: equashun
 errors: errorz
+escaping: escapin
 essential: essenshul
 established: establishd
 ether: ethr
@@ -389,6 +398,8 @@ experienced: experiencd
 explains: explainz
 explanation: explanashun
 express: expres
+expression: expreshun
+expressions: expreshuns
 extensive: extensiv
 faces: facez
 failed: faild
@@ -421,6 +432,7 @@ fonts: fontz
 football: futball
 for: "4"
 forced: forcd
+formed: formd
 forms: formz
 fortunes: fortunez
 found: findz
@@ -521,6 +533,7 @@ illustration: illustrashun
 imaginig: imaginin
 imagining: imaginin
 implementation: implementashun
+implemented: implementd
 improve: improov
 improved: improovd
 inception: incepshun
@@ -530,6 +543,8 @@ including: includin
 increased: increasd
 increases: increasez
 indeed: inded
+indentation: indentashun
+indentations: indentashuns
 indicated: indicatd
 indicates: indicatez
 information: informashun
@@ -540,13 +555,18 @@ inspection: inspecshun
 inspiration: inspirashun
 inspiring: inspirin
 installation: installashun
+installed: installd
 installing: installin
+instruction: instrucshun
+instructions: instrucshuns
 integration: integrashn
 interaction: interacshun
 interactive: interactiv
 interested: interestd
 interesting: interestin
 internet: internets
+interpolation: interpolashun
+interpolations: interpolashuns
 interviews: interviewz
 introduces: introducez
 introducing: introducin
@@ -554,6 +574,7 @@ introduction: introducshun
 invested: investd
 investigating: investigatin
 investigative: investigativ
+invokes: invokez
 involved: involvd
 iphone: ifone
 iphones: ifonez
@@ -744,6 +765,7 @@ over: ovar
 overcarged: overchargd
 overheating: overheatin
 overrated: overratd
+overriding: overridin
 overtures: overturez
 owed: owd
 owned: ownd
@@ -755,6 +777,7 @@ pages: pagez
 pageviews: pageviewz
 pants: pantz
 parameter: parametr
+parses: parsez
 parsing: parsin
 participated: participatd
 pass: pas
@@ -807,6 +830,7 @@ prediction: predicshun
 preferences: preferences
 preferred: preferrd
 preparation: preparashun
+preprocessing: preprocessin
 presentation: presentashun
 presentations: presentashuns
 president: prezident
@@ -819,7 +843,9 @@ primaries: primariez
 printed: printd
 printing: printin
 priorities: prioritiez
+problems: problemz
 process: proces
+processing: processin
 produced: producd
 production: producshun
 products: productz
@@ -849,6 +875,7 @@ question: queshun
 questions: quesshuns
 quitting: quittin
 radioactive: radioactiv
+rails: railz
 raised: raisd
 raises: raisez
 rands: randz
@@ -1076,6 +1103,7 @@ suprise: surprize
 surprising: surprisn
 sutied: suitd
 switched: switchd
+switches: switchez
 swizzling: swizzlin
 synching: synchin
 system: sistem
@@ -1187,6 +1215,7 @@ uses: usez
 using: usin
 utilities: utilitiez
 utter: uttr
+variables: variablez
 vending: vendin
 version: vershun
 versionable: vershunable
