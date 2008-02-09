@@ -1,5 +1,7 @@
+require 'rubygems'
 require 'rake'
 require 'rake/testtask'
+require 'rake/gempackagetask'
 
 $KCODE = "UTF-8"
 
@@ -11,3 +13,31 @@ Rake::TestTask.new("test_units") { |t|
   t.verbose = false
   t.warning = true
 }
+
+PKG_VERSION = '1.0.0'
+PKG_FILES = FileList[
+  '[A-Z]*', 
+  'bin/**/*',
+  'lib/**/*',
+  'test/**/*',
+]
+
+spec = Gem::Specification.new do |s|
+  s.platform = Gem::Platform::RUBY
+  s.summary = "LOLspeak translator"
+  s.name = "lolspeak"
+  s.version = PKG_VERSION
+  s.requirements << 'none'
+  s.require_path = 'lib'
+  s.files = PKG_FILES
+  s.bindir = 'bin'
+  s.executables = ['lolspeak']
+  s.description = <<-EOF
+  Blah blah
+  EOF
+end
+
+Rake::GemPackageTask.new(spec) do |pkg|
+  pkg.need_zip = true
+  pkg.need_tar = true
+end
