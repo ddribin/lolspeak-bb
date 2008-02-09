@@ -1,5 +1,91 @@
 #!/usr/bin/env ruby
 
 require 'lolspeak'
+require 'optparse'
+require 'ostruct'
 
-STDIN.each { |l| puts l.to_lolspeak }
+class LOLspeakApp
+  COMMAND = File.basename($0)
+  USAGE = "Usage: #{COMMAND} [OPTIONS] [<text> ...]"
+  def initialize
+    @command = File.basename($0)
+
+    @options = OpenStruct.new
+    @options.inputFile = nil
+    @options.xml = false
+  end
+  
+  def run(argv)
+    begin
+      parse_options(argv)
+      main(argv)
+    rescue
+      STDERR.puts "#{COMMAND}: " + $!
+      return 1
+    end
+    return 0
+  end
+  
+  def parse_options(argv)
+    opts = OptionParser.new do |opts|
+      opts.banner = USAGE
+      opts.separator ""
+      opts.separator "Specific options:"
+
+      opts.on("-i", "--input FILE", "Read input from a file") do |fileName|
+        @options.inputFile = fileName
+      end
+      
+      opts.on("-x", "--xml", "Parse file as XML") do |fileName|
+        @options.xml = true
+      end
+
+      opts.on_tail("-h", "--help", "Show this message") do
+        puts opts
+        exit
+      end
+    end
+    
+    opts.parse!(argv)
+  end
+  
+  def main(argv)
+    if argv.length == 0 and @options.inputFile.nil?
+      @options.inputFile = "-"
+    end
+    
+    if @options.inputFile.nil?
+      argv.collect! { |a| a.to_lolspeak }
+      puts argv.join(" ")
+      return
+    end
+    
+    if (@options.inputFile == "-")
+      io = STDIN
+    else
+      io = File.open(@options.inputFile)
+    end
+    
+    if (@options.xml)
+      translate_xml_io(io)
+    else
+      translate_io(io)
+    end
+  end
+  
+  def translate_io(io)
+    begin
+      io.each { |l| puts l.to_lolspeak }
+    rescue Interrupt
+    end
+  end
+  
+  def translate_xml_io(io)
+    xml = io.read
+    puts xml.xml_to_lolspeak
+  end
+end
+
+app = LOLspeakApp.new
+rc = app.run(ARGV)
+exit rc
