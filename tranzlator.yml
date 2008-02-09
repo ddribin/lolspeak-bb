@@ -113,6 +113,7 @@ birthday: birfdai
 "book's": bookz
 booked: bookd
 bookies: bookiez
+books: bookz
 boring: borin
 boss: bos
 bought: buyd
@@ -316,10 +317,10 @@ does: doez
 dogged: doggd
 doing: doin
 dollars: dollarz
+"don't": dun
 donation: donashun
 donations: donashuns
 done: dun
-"don’t": dun
 downgrading: downgradin
 downloading: downloadin
 downloads: downloadz
@@ -584,8 +585,6 @@ issues: issuez
 "it's": iz
 its: itz
 itunes: itunez
-"it’s": iz
-"i’m": me
 jackassyness: jackasynes
 james: jamez
 jiminy: omgwtfbbq
@@ -1251,7 +1250,6 @@ weeks: weekz
 welcome: welcom
 were: wuz
 "weren't": "wuz not"
-"we’re": we
 what: wut
 where: wer
 whether: whethr
@@ -1293,7 +1291,8 @@ years: yeers
 yesterday: yesterdai
 you: u
 "you'd": ud
+"isn't": isnt
+"here's": heers
 your: ur
-"you’d": ud
 zoomer: zoomr
 zooming: zommin
