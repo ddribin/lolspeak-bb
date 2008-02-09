@@ -1,3 +1,5 @@
+$KCODE = "UTF-8"
+
 require 'lolspeak'
 require 'rexml/document'
 require 'test/unit'
@@ -145,5 +147,11 @@ EXPECTED
     expected = {}
     t.clear_translated_heuristics
     assert_equal expected, t.translated_heuristics
+  end
+  
+  def test_translate_before_apostrophe
+    t = new_tranzlator
+    assert_equal "kitteh's", t.translate_word("cat's")
+    assert_equal "kitteh’s", t.translate_word("cat’s")
   end
 end

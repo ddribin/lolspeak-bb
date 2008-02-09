@@ -1,3 +1,5 @@
+$KCODE = "UTF-8"
+
 require 'yaml'
 require 'rexml/document'
 
@@ -27,6 +29,12 @@ module LOLspeak
       lol_word = @dictionary[word]
       if lol_word.nil?
         lol_word = @dictionary[word.gsub("’", "'")]
+      end
+      
+      if lol_word.nil? and word.match(/(.*)([\’\']\w+)$/)
+        prefix, suffix = $1, $2
+        lol_word = @dictionary[prefix]
+        lol_word += suffix if !lol_word.nil?
       end
       
       if lol_word.nil? and @try_heuristics
