@@ -3,13 +3,14 @@
 $KCODE = 'UTF8'
 
 require 'yaml'
+require 'CGI'
 
 class Hash
   def to_apple_dictionary(io = STDOUT)
     io.puts '<?xml version="1.0" encoding="UTF-8"?>'
     io.puts '<d:dictionary xmlns="http://www.w3.org/1999/xhtml" xmlns:d="http://www.apple.com/DTDs/DictionaryService-1.0.rng">'
     self.keys.sort.each do |key|
-      value = self[key]
+      value = CGI::escapeHTML(self[key])
       io.puts <<ENTRY
 <d:entry id="#{key}">
     <d:index d:value="#{key}" d:title="#{key}"/>
@@ -22,7 +23,8 @@ ENTRY
   end
 end
 
-tranzlator = YAML::load_file('tranzlator.yml')
+file = ARGV[0] || 'tranzlator.yml'
+tranzlator = YAML::load_file(file)
 
 tranzlator.to_apple_dictionary
 
