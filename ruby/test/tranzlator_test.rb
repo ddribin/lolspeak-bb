@@ -63,6 +63,12 @@ class TranzlatorTest < Test::Unit::TestCase
     t = new_tranzlator
     assert_equal "f&#^bar", t.translate_word("foobar")
   end
+  
+  def test_translate_before_apostrophe
+    t = new_tranzlator
+    assert_equal "kitteh's", t.translate_word("cat's")
+    assert_equal "kitteh’s", t.translate_word("cat’s")
+  end
 
   def test_tranzlate_words
     t = new_tranzlator
@@ -70,7 +76,7 @@ class TranzlatorTest < Test::Unit::TestCase
       t.translate_words("Hi, I'm a cat!  Your eating it’s cheeseburger")
   end
 
-  def test_tranzlate_words
+  def test_tranzlate_words_with_filter
     t = new_tranzlator
     assert_equal "OH HAI, ME KITTEH!",
       t.translate_words("Hi, I'm a cat!") { |w| w.upcase }
@@ -177,11 +183,5 @@ EXPECTED
     expected = {}
     t.clear_translated_heuristics
     assert_equal expected, t.translated_heuristics
-  end
-  
-  def test_translate_before_apostrophe
-    t = new_tranzlator
-    assert_equal "kitteh's", t.translate_word("cat's")
-    assert_equal "kitteh’s", t.translate_word("cat’s")
   end
 end
