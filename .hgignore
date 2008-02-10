@@ -2,3 +2,4 @@
 apple_dictionary/objects
 apple_dictionary/MyDictionary.xml
 ^ruby/pkg
+\.rake_tasks
