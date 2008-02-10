@@ -90,7 +90,8 @@ module LOLspeak
       xml_element.texts.each do |text|
         string = text.value
         string = self.translate_words(string)
-        text.replace_with(REXML::Text.new(string))
+        new_text = REXML::Text.new(string, true, nil, true)
+        text.replace_with(new_text)
       end
     end
 

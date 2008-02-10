@@ -70,6 +70,12 @@ class TranzlatorTest < Test::Unit::TestCase
     assert_equal expected, t.translate_xml_string(xml)
   end
   
+  def test_tranzlate_xml_string_with_ampersand
+    t = new_tranzlator
+    assert_equal "<b>&nbsp;oh hai</b>",
+      t.translate_xml_string("<b>&nbsp;hi</b>")
+  end
+  
   def test_string_to_lolspeak
     LOLspeak.default_tranzlator = new_tranzlator
     assert_equal "oh hai, me eating it’s cheezeburger",
