@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'rake'
 require 'rake/testtask'
+require 'rake/rdoctask'
 require 'rake/gempackagetask'
 
 require 'lib/lolspeak'
@@ -16,6 +17,7 @@ Rake::TestTask.new("test_units") do |t|
   t.warning = true
 end
 
+PKG_NAME = 'lolspeak'
 PKG_VERSION = LOLspeak::VERSION
 PKG_FILES = FileList[
   '[A-Z]*', 
@@ -24,14 +26,22 @@ PKG_FILES = FileList[
   'test/**/*',
 ]
 
+Rake::RDocTask.new(:rdoc) do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title    = "#{PKG_NAME} -- A LOLspeak translator"
+  rdoc.rdoc_files.include('README')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
+
 spec = Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "LOLspeak translator"
-  s.name = "lolspeak"
+  s.name = PKG_NAME
   s.version = PKG_VERSION
   s.requirements << 'none'
   s.require_path = 'lib'
   s.files = PKG_FILES
+  s.has_rdoc = true
   s.bindir = 'bin'
   s.executables = ['lolspeak']
   s.description = <<-EOF

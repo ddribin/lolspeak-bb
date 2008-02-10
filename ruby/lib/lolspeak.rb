@@ -4,20 +4,35 @@ require 'yaml'
 require 'rexml/document'
 require 'cgi'
 
+# This module encapsulates the English to LOLspeak translator.
 module LOLspeak
   VERSION = "1.0.0"
   
+  # A class to perform English to LOLspeak translation
   class Tranzlator
-    attr_accessor :trace, :try_heuristics
-    attr_reader :traced_words, :translated_heuristics
+    # (bool -> false) Wether or not to record translations
+    attr_accessor :trace
+    attr_accessor :try_heuristics
+    attr_reader :traced_words
+    attr_reader :translated_heuristics
     
     class << Tranzlator
+      # Creates a Tranzlator using a dictionary from a YAML file
+      #
+      # :call-seq:
+      #   Tranzlator.from_file(file)        -> Tranzlator
+      #
       def from_file(file)
         dictionary = YAML::load_file(file)
         return Tranzlator.new(dictionary)
       end
     end
     
+    # Creates a Tranzlator from the given dictionary
+    #
+    # :call-seq:
+    #   initialize(dictionary) -> Tranzlator
+    #
     def initialize(dictionary)
       @dictionary = dictionary
       @traced_words = {}
@@ -25,6 +40,26 @@ module LOLspeak
       @translated_heuristics = {}
     end
 
+    # Translates a single word into LOLspeak. By default, the result is in all
+    # lower case:
+    #  
+    #   translator.translate_word("Hi") -> "oh hai"
+    #     
+    # If a block is given the word may
+    # be transformed.  You could use this to upper case or XML encode the
+    # result.  This example upper cases the result:
+    #
+    #   translator.translate_word("hi") { |w| w.upcase } -> "OH HAI"
+    #
+    # If heuristics are off, then sonly words in the dictionary are
+    # translated.  If heuristics are on, then words not in the dictionary may
+    # be translated using standard LOLspeak heuristics, such as "*tion" ->
+    # "*shun".
+    #
+    # :call-seq:
+    #  translate_word(word)                       -> String
+    #  translate_word(word) { |word| transform }  -> String
+    #
     def translate_word(word, &filter)
       word = word.downcase
       lol_word = @dictionary[word]
@@ -70,14 +105,23 @@ module LOLspeak
       return lol_word
     end
     
+    # Clears the trace word hash
     def clear_traced_words
       @traced_words = {}
     end
     
+    # Clears the hash storing words translated by heuristics
     def clear_translated_heuristics
       @translated_heuristics = {}
     end
     
+    # Translates all the words in a string. If a block is given, it is called
+    # to transform each individual word.
+    #
+    # :call-seq:
+    #  translate_words(words)                       -> String
+    #  translate_words(words) { |word| transform }  -> String
+    #
     def translate_words(words, &filter)
       lol_words = words.gsub(/(\w[\w’\']*)(\s*)/) do
         word, space = $1, $2
@@ -90,6 +134,17 @@ module LOLspeak
       return lol_words
     end
   
+    # Translates the REXML::Text parts of a single REXML::Element. The element
+    # is modified in place.
+    #
+    # If a block is given, it is called to transform each individual word. By
+    # default, each word is XML escaped, so this transform applies on top of
+    # that.
+    #
+    # :call-seq:
+    #  translate_xml_element!(xml_element)
+    #  translate_xml_element!(xml_element) { |word| transform }
+    #
     def translate_xml_element!(xml_element, &filter)
       xml_element.texts.each do |text|
         string = text.to_s
@@ -103,10 +158,31 @@ module LOLspeak
       end
     end
 
+    # Translates the REXML::Text parts of an REXML::Element and all child
+    # elements. The elements are modified in place.
+    #
+    # If a block is given, it iscalled to transform each individual word. By
+    # default, each word is XML escaped, so this transform applies on top of
+    # that.
+    #
+    # :call-seq:
+    #  translate_xml_element!(xml_element)
+    #  translate_xml_element!(xml_element) { |word| transform }
+    #
     def translate_xml_element_recursive!(xml_element, &filter)
       xml_element.each_recursive { |e| translate_xml_element!(e, &filter) }
     end
   
+    # Translates the text parts of a well-formed XML string.  It parses the
+    # string using REXML and then translates the root element using
+    # translate_xml_element_recursive!.
+    #
+    # If a block is given, it is called to transform each individual word.
+    #
+    # :call-seq:
+    #   translate_xml_string(xml_string)                      -> String
+    #   translate_xml_string(xml_string) { |word| transform } -> String
+    #
     def translate_xml_string(xml_string, &filter)
       xml_doc = REXML::Document.new xml_string
       translate_xml_element_recursive!(xml_doc, &filter)
@@ -116,13 +192,20 @@ module LOLspeak
 
   class << self
     @@default_tranzlator = nil
+    
+    # Sets the default Tranzlator to new_tranzlator
+    #
     def default_tranzlator=(new_tranzlator)
       return @@default_tranzlator = new_tranzlator
     end
 
+    # Returns the default Tranzlator.  On the first time it is called, it
+    # creates a Translator using the built-in dictionary.
+    #
     def default_tranzlator
       if @@default_tranzlator.nil?
-        default_file = File.join(File.dirname(__FILE__), "lolspeak", "tranzlator.yml")
+        default_file = File.join(File.dirname(__FILE__), "lolspeak",
+          "tranzlator.yml")
         @@default_tranzlator = Tranzlator.from_file(default_file)
       end
       return @@default_tranzlator
@@ -131,23 +214,66 @@ module LOLspeak
 end
 
 class String
+  # Translates all the words in this string.  Calls Tranzlator.translate_words
+  # on the receiver using the default Tranzlator.
+  #
+  #   "Hi cat".to_lospeak -> "oh hai kitteh"
+  #
+  # See also: LOLspeak.default_tranzlator
+  #     
+  # :call-seq:
+  #   to_lolspeak                       -> String
+  #   to_lolspeak { |word| transform }  -> String
+  #
   def to_lolspeak(&filter)
     return LOLspeak::default_tranzlator.translate_words(self, &filter)
   end
   
+  # Treats the string as XML and translates all the text in this string. Calls
+  # Tranzlator.translate_xml_string on the receiver using the default
+  # Tranzlator.
+  #
+  # See also: LOLspeak.default_tranzlator
+  #
+  # :call-seq:
+  #   xml_to_lolspeak                       -> String
+  #   xml_to_lolspeak { |word| transform }  -> String
+  #
   def xml_to_lolspeak(&filter)
     return LOLspeak::default_tranzlator.translate_xml_string(self, &filter)
   end
 end
 
-class REXML::Element
-  def to_lolspeak!(&filter)
-    LOLspeak::default_tranzlator.translate_xml_element!(self, &filter)
-  end
+module REXML # :nodoc:
+  class Element
+    
+    # Translates each REXML::Text of this element.  Calls
+    # Tranzlator.translate_xml_element! on the receiver using the default
+    # tranzlator.
+    #
+    # See also: LOLspeak.default_tranzlator
+    #
+    # :call-seq:
+    #   to_lolspeak!
+    #   to_lolspeak! { |word| transform }
+    #
+    def to_lolspeak!(&filter)
+      LOLspeak::default_tranzlator.translate_xml_element!(self, &filter)
+    end
   
-  def to_lolspeak_recursive!(&filter)
-    t = LOLspeak::default_tranzlator
-    t.translate_xml_element_recursive!(self, &filter)
+    # Translates each REXML::Text of this element and all child elements.
+    # Calls Tranzlator.translate_xml_element_recusvie! on the receiver using
+    # the default tranzlator.
+    #
+    # See also: LOLspeak.default_tranzlator
+    #
+    # :call-seq:
+    #   to_lolspeak_recursive!
+    #   to_lolspeak_recursive! { |word| transform }
+    #
+    def to_lolspeak_recursive!(&filter)
+      t = LOLspeak::default_tranzlator
+      t.translate_xml_element_recursive!(self, &filter)
+    end
   end
 end
-
