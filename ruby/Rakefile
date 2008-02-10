@@ -35,7 +35,7 @@ spec = Gem::Specification.new do |s|
   s.bindir = 'bin'
   s.executables = ['lolspeak']
   s.description = <<-EOF
-  Traslates English text into LOLspeak.
+  Translates English text into LOLspeak.
   EOF
 end
 
