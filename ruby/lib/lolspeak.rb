@@ -24,25 +24,17 @@ module LOLspeak
       @try_heuristics = false
       @translated_heuristics = {}
     end
-    
-    def lookup(word, &filter)
-      lol_word = @dictionary[word]
-      if (!lol_word.nil?) and (!filter.nil?)
-        lol_word = filter.call(lol_word)
-      end
-      return lol_word
-    end
 
     def translate_word(word, &filter)
       word = word.downcase
-      lol_word = lookup(word, &filter)
+      lol_word = @dictionary[word]
       if lol_word.nil?
-        lol_word = lookup(word.gsub("’", "'"), &filter)
+        lol_word = @dictionary[word.gsub("’", "'")]
       end
       
       if lol_word.nil? and word.match(/(.*)([\’\']\w+)$/)
         prefix, suffix = $1, $2
-        lol_word = lookup(prefix, &filter)
+        lol_word = @dictionary[prefix]
         lol_word += suffix if !lol_word.nil?
       end
       
@@ -70,6 +62,10 @@ module LOLspeak
       else
         @traced_words[word] = lol_word
       end
+      
+      if !filter.nil?
+        lol_word = filter.call(lol_word)
+      end
 
       return lol_word
     end
@@ -94,22 +90,26 @@ module LOLspeak
       return lol_words
     end
   
-    def translate_xml_element!(xml_element)
+    def translate_xml_element!(xml_element, &filter)
       xml_element.texts.each do |text|
         string = text.to_s
-        string = self.translate_words(string) { |w| CGI.escapeHTML(w) }
+        string = self.translate_words(string) do |w|
+          w = CGI.escapeHTML(w)
+          w = filter.call(w) if !filter.nil?
+          w
+        end
         new_text = REXML::Text.new(string, true, nil, true)
         text.replace_with(new_text)
       end
     end
 
-    def translate_xml_element_recursive!(xml_element)
-      xml_element.each_recursive { |e| translate_xml_element!(e) }
+    def translate_xml_element_recursive!(xml_element, &filter)
+      xml_element.each_recursive { |e| translate_xml_element!(e, &filter) }
     end
   
-    def translate_xml_string(xml_string)
+    def translate_xml_string(xml_string, &filter)
       xml_doc = REXML::Document.new xml_string
-      translate_xml_element_recursive!(xml_doc)
+      translate_xml_element_recursive!(xml_doc, &filter)
       return xml_doc.to_s
     end
   end
@@ -131,24 +131,23 @@ module LOLspeak
 end
 
 class String
-  def to_lolspeak
-    return LOLspeak::default_tranzlator.translate_words(self)
+  def to_lolspeak(&filter)
+    return LOLspeak::default_tranzlator.translate_words(self, &filter)
   end
   
-  def xml_to_lolspeak
-    return LOLspeak::default_tranzlator.translate_xml_string(self)
+  def xml_to_lolspeak(&filter)
+    return LOLspeak::default_tranzlator.translate_xml_string(self, &filter)
   end
 end
 
 class REXML::Element
-  def to_lolspeak!
-    LOLspeak::default_tranzlator.translate_xml_element!(self)
+  def to_lolspeak!(&filter)
+    LOLspeak::default_tranzlator.translate_xml_element!(self, &filter)
   end
   
-  def to_lolspeak_recursive!
+  def to_lolspeak_recursive!(&filter)
     t = LOLspeak::default_tranzlator
-#    t.translate_xml_element!(self)
-    t.translate_xml_element_recursive!(self)
+    t.translate_xml_element_recursive!(self, &filter)
   end
 end
 

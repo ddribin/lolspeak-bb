@@ -24,19 +24,27 @@ class TranzlatorTest < Test::Unit::TestCase
   
   def test_translate_word_with_filter
     t = new_tranzlator
-    assert_equal "cheezeburger", t.translate_word("cheeseburger")
     assert_equal "OH HAI", t.translate_word("hi") {|w| w.upcase}
   end
-  
   
   def test_translate_missing_word
     t = new_tranzlator
     assert_equal "eat", t.translate_word("eat")
   end
   
+  def test_translate_missing_word_with_filter
+    t = new_tranzlator
+    assert_equal "EAT", t.translate_word("eat") {|w| w.upcase}
+  end
+  
   def test_downcase
     t = new_tranzlator
     assert_equal "oh hai", t.translate_word("Hi")
+  end
+  
+  def test_downcase_missing
+    t = new_tranzlator
+    assert_equal "eat", t.translate_word("Eat")
   end
   
   def test_tranzlate_ascii_apostrophe
@@ -106,10 +114,34 @@ class TranzlatorTest < Test::Unit::TestCase
       t.translate_xml_string("<b>foobar</b>")
   end
   
+  def test_tranzlate_xml_string_with_filter
+    t = new_tranzlator
+    assert_equal "<b>OH HAI&NBSP;EAT</b>",
+      t.translate_xml_string("<b>hi&nbsp;eat</b>") { |w| w.upcase }
+  end
+  
   def test_string_to_lolspeak
     LOLspeak.default_tranzlator = new_tranzlator
     assert_equal "oh hai, me eating it’s cheezeburger",
       "Hi, I'm eating it’s cheeseburger".to_lolspeak
+  end
+  
+  def test_string_xml_to_lolspeak
+    LOLspeak.default_tranzlator = new_tranzlator
+    assert_equal "<b>oh hai kitteh</b>",
+      "<b>hi cat</b>".xml_to_lolspeak
+  end
+  
+  def test_string_xml_to_lolspeak_with_filter
+    LOLspeak.default_tranzlator = new_tranzlator
+    assert_equal "<b>OH HAI KITTEH</b>",
+      "<b>hi cat</b>".xml_to_lolspeak { |w| w.upcase}
+  end
+  
+  def test_string_to_lolspeak_with_filter
+    LOLspeak.default_tranzlator = new_tranzlator
+    assert_equal "OH HAI, ME EATING IT’S CHEEZEBURGER",
+      "Hi, I'm eating it’s cheeseburger".to_lolspeak { |w| w.upcase }
   end
   
   def test_xml_element_recursive_to_lolspeak
@@ -140,7 +172,21 @@ class TranzlatorTest < Test::Unit::TestCase
     assert_equal expected, document.to_s
   end
   
-  def test_xml_document_to_lolspeak
+  def test_xml_element_to_lolspeak_with_filter
+    LOLspeak.default_tranzlator = new_tranzlator
+    xml = <<-XML
+    <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+    XML
+    document = REXML::Document.new xml
+
+    expected = <<-EXPECTED
+    <cat cheeseburger='hi'>KITTEH <b>cheeseburger</b> OH HAI</cat>
+    EXPECTED
+    document.root.to_lolspeak! { |w| w.upcase }
+    assert_equal expected, document.to_s
+  end
+  
+  def test_xml_element_to_lolspeak_recursive
     LOLspeak.default_tranzlator = new_tranzlator
     xml = <<-XML
 <cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
@@ -151,6 +197,20 @@ XML
 <cat cheeseburger='hi'>kitteh <b>cheezeburger</b> oh hai</cat>
 EXPECTED
     document.to_lolspeak_recursive!
+    assert_equal expected, document.to_s
+  end
+  
+  def test_xml_element_to_lolspeak_recursive_with_filter
+    LOLspeak.default_tranzlator = new_tranzlator
+    xml = <<-XML
+<cat cheeseburger='hi'>cat <b>cheeseburger</b> hi</cat>
+XML
+    document = REXML::Document.new xml
+
+    expected = <<-EXPECTED
+<cat cheeseburger='hi'>KITTEH <b>CHEEZEBURGER</b> OH HAI</cat>
+EXPECTED
+    document.to_lolspeak_recursive! { |w| w.upcase }
     assert_equal expected, document.to_s
   end
   
