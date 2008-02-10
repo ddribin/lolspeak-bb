@@ -8,12 +8,18 @@ require 'cgi'
 module LOLspeak
   VERSION = "1.0.0"
   
-  # A class to perform English to LOLspeak translation
+  # A class to perform English to LOLspeak translation based on a dictionary
+  # of words.
   class Tranzlator
     # (bool -> false) Wether or not to record translations
     attr_accessor :trace
+    # (bool -> false) If true, try heurstics when translating words.  If
+    # false, only use the dictionary for translation.
     attr_accessor :try_heuristics
+    # (Hash) Stores all translations, if trace is true.
     attr_reader :traced_words
+    # (Hash) Stores all words translated via heuristics, if try_heuristics is
+    # true.
     attr_reader :translated_heuristics
     
     class << Tranzlator
@@ -42,19 +48,18 @@ module LOLspeak
 
     # Translates a single word into LOLspeak. By default, the result is in all
     # lower case:
-    #  
+    #   
     #   translator.translate_word("Hi") -> "oh hai"
-    #     
+    #      
     # If a block is given the word may
     # be transformed.  You could use this to upper case or XML encode the
     # result.  This example upper cases the result:
     #
     #   translator.translate_word("hi") { |w| w.upcase } -> "OH HAI"
     #
-    # If heuristics are off, then sonly words in the dictionary are
-    # translated.  If heuristics are on, then words not in the dictionary may
-    # be translated using standard LOLspeak heuristics, such as "*tion" ->
-    # "*shun".
+    # If heuristics are off, then only words in the dictionary are translated.
+    # If heuristics are on, then words not in the dictionary may be translated
+    # using standard LOLspeak heuristics, such as "*tion" -> "*shun".
     #
     # :call-seq:
     #  translate_word(word)                       -> String
