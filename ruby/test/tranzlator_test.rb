@@ -22,6 +22,13 @@ class TranzlatorTest < Test::Unit::TestCase
     assert_equal "oh hai", t.translate_word("hi")
   end
   
+  def test_translate_word_with_filter
+    t = new_tranzlator
+    assert_equal "cheezeburger", t.translate_word("cheeseburger")
+    assert_equal "OH HAI", t.translate_word("hi") {|w| w.upcase}
+  end
+  
+  
   def test_translate_missing_word
     t = new_tranzlator
     assert_equal "eat", t.translate_word("eat")
@@ -51,11 +58,22 @@ class TranzlatorTest < Test::Unit::TestCase
     t = new_tranzlator
     assert_equal "it’s", t.translate_word("it’s")
   end
+  
+  def test_tranzlate_with_nonalpanum
+    t = new_tranzlator
+    assert_equal "f&#^bar", t.translate_word("foobar")
+  end
 
   def test_tranzlate_words
     t = new_tranzlator
     assert_equal "oh hai, me kitteh!  ur eating it’s cheezeburger",
       t.translate_words("Hi, I'm a cat!  Your eating it’s cheeseburger")
+  end
+
+  def test_tranzlate_words
+    t = new_tranzlator
+    assert_equal "OH HAI, ME KITTEH!",
+      t.translate_words("Hi, I'm a cat!") { |w| w.upcase }
   end
   
   def test_tranzlate_xml_string
@@ -74,6 +92,12 @@ class TranzlatorTest < Test::Unit::TestCase
     t = new_tranzlator
     assert_equal "<b>&nbsp;oh hai</b>",
       t.translate_xml_string("<b>&nbsp;hi</b>")
+  end
+  
+  def test_tranzlate_xml_string_escape
+    t = new_tranzlator
+    assert_equal "<b>f&amp;#^bar</b>",
+      t.translate_xml_string("<b>foobar</b>")
   end
   
   def test_string_to_lolspeak

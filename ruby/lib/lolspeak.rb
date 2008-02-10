@@ -2,6 +2,7 @@ $KCODE = "UTF-8"
 
 require 'yaml'
 require 'rexml/document'
+require 'cgi'
 
 module LOLspeak
   VERSION = "1.0.0"
@@ -23,17 +24,25 @@ module LOLspeak
       @try_heuristics = false
       @translated_heuristics = {}
     end
-
-    def translate_word(word)
-      word = word.downcase
+    
+    def lookup(word, &filter)
       lol_word = @dictionary[word]
+      if (!lol_word.nil?) and (!filter.nil?)
+        lol_word = filter.call(lol_word)
+      end
+      return lol_word
+    end
+
+    def translate_word(word, &filter)
+      word = word.downcase
+      lol_word = lookup(word, &filter)
       if lol_word.nil?
-        lol_word = @dictionary[word.gsub("’", "'")]
+        lol_word = lookup(word.gsub("’", "'"), &filter)
       end
       
       if lol_word.nil? and word.match(/(.*)([\’\']\w+)$/)
         prefix, suffix = $1, $2
-        lol_word = @dictionary[prefix]
+        lol_word = lookup(prefix, &filter)
         lol_word += suffix if !lol_word.nil?
       end
       
@@ -73,11 +82,10 @@ module LOLspeak
       @translated_heuristics = {}
     end
     
-    
-    def translate_words(words)
+    def translate_words(words, &filter)
       lol_words = words.gsub(/(\w[\w’\']*)(\s*)/) do
         word, space = $1, $2
-        lol_word = translate_word(word)
+        lol_word = translate_word(word, &filter)
 
         # Stick the space back on, as long is it's not empty
         lol_word += space if lol_word != ""
@@ -88,8 +96,8 @@ module LOLspeak
   
     def translate_xml_element!(xml_element)
       xml_element.texts.each do |text|
-        string = text.value
-        string = self.translate_words(string)
+        string = text.to_s
+        string = self.translate_words(string) { |w| CGI.escapeHTML(w) }
         new_text = REXML::Text.new(string, true, nil, true)
         text.replace_with(new_text)
       end
