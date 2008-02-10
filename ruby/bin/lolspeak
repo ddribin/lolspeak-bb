@@ -1,5 +1,31 @@
 #!/usr/bin/env ruby
 
+# == Synopsis
+#
+# Translate text into LOLspeak
+#
+# == Usage
+#
+#   lolspeak [OPTIONS] [<text> ...]
+#
+# == Options
+#  
+# -f, --file FILE:: Read input from a file.  Use <tt>-</tt> for standard
+#                   input.
+#
+# -x, --xml:: Parse input text as XML and translate only the text portions.
+#
+# -h, --help:: Prints a help message and exits.
+#
+# -v, --version:: Prints the version and exits.
+#
+# == Author
+# Dave Dribin
+#
+# == Copyright
+# Copyright (c)  2008 Dave Dribin
+# Licensed under the MIT license.
+
 require 'lolspeak'
 require 'optparse'
 require 'ostruct'
@@ -37,11 +63,11 @@ class LOLspeakApp
         @options.inputFile = fileName
       end
       
-      opts.on("-x", "--xml", "Parse file as XML") do |fileName|
+      opts.on("-x", "--xml", "Parse text as XML") do |fileName|
         @options.xml = true
       end
       
-      opts.on_tail("-h", "--help", "Show this message") do
+      opts.on_tail("-h", "--help", "Show a help message") do
         puts opts
         return false
       end

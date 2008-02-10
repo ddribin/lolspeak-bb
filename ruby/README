@@ -1,4 +1,9 @@
-lolspeak is an English to LOLspeak translator.  It contains a default dictionary and various helper methods.  The main class is the LOLspeak::Tranzlator class.  Since you typically don't need to use a custom dictionary, you will most likely use the default tranzlator, LOLspeak.default_tranzlator.  Or better yet, use the extensions to String and REXML::Element.  For example:
+lolspeak is an English to LOLspeak translator. It contains a default
+dictionary and various helper methods. The main class is the
+LOLspeak::Tranzlator class. Since you typically don't need to use a custom
+dictionary, you will most likely use the default tranzlator,
+LOLspeak.default_tranzlator. Or better yet, use the extensions to String and
+REXML::Element. For example:
 
   "Hi there! You have a cute cat.".to_lolspeak
     -> "oh hai thar! u has cute kitteh."
@@ -7,4 +12,4 @@ To install this via Ruby Gems:
 
   % sudo gem install lolspeak
 
-It also includes a command line application called <tt>lolspeak</tt>.
+It also includes a command line application called lolspeak.
