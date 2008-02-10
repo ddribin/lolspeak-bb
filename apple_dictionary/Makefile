@@ -35,7 +35,7 @@ RM			=	/bin/rm
 
 ###########################
 
-all:
+all: DICT_SRC_PATH
 	"$(DICT_BUILD_TOOL_BIN)/build_dict.sh" $(DICT_BUILD_OPTS) $(DICT_NAME) $(DICT_SRC_PATH) $(CSS_PATH) $(PLIST_PATH)
 	echo "Done."
 
@@ -47,6 +47,9 @@ install:
 	touch $(DESTINATION_FOLDER)
 	echo "Done."
 	echo "To test the new dictionary, try Dictionary.app."
+
+DICT_SRC_PATH: ../tranzlator.yml
+	./lol2dict.rb ../tranzlator.yml > $(DICT_SRC_PATH)
 
 clean:
 	$(RM) -rf $(DICT_DEV_KIT_OBJ_DIR)
