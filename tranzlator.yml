@@ -1,5 +1,7 @@
 a: ""
+abhorred: abhorrd
 about: bout
+absorbed: absorbd
 accessibility: accesibility
 accessories: accessoriez
 accomplished: accomplishd
@@ -32,6 +34,7 @@ affiliation: affiliashun
 aforelinked: aforelinkd
 aforementioned: aforemenshuned
 after: aftr
+ages: agez
 agreed: agred
 agrees: agreez
 allowed: allowd
@@ -55,6 +58,7 @@ anticipated: anticipatd
 anticipation: anticipashun
 anything: anythin
 aperature: aperschur
+apologies: apologiez
 appealed: appeald
 application: applicashun
 applications: applicashuns
@@ -66,6 +70,7 @@ archive: archiv
 are: r
 articles: articlez
 asisted: assistd
+asking: askin
 assembling: assemblin
 assets: assetz
 assimilation: assimilashun
@@ -73,6 +78,7 @@ assumed: assumd
 assuming: assumin
 astonishing: astonishin
 attached: attachd
+attempted: attemptd
 attempting: attemptin
 attention: attenshun
 attitudes: attitudez
@@ -90,6 +96,7 @@ backups: backupz
 baked: bakd
 balked: balkd
 balkled: balkd
+ballmer: ballmr
 bandwidth: bandwif
 banning: bannin
 based: basd
@@ -108,8 +115,10 @@ benchmarks: benchmarkz
 better: bettr
 between: tween
 big: hooj
+bigger: biggr
 billed: billd
 birthday: birfdai
+bloggers: bloggerz
 board: bord
 "book's": bookz
 booked: bookd
@@ -143,22 +152,27 @@ canned: cannd
 capitalization: capitalizashun
 capping: cappin
 capture: capchure
+carrier: carrir
 cars: carz
 cat: kitteh
 caucuses: caucusez
 caution: caushun
 celebrating: celebratin
 cellphone: cellfone
+center: centr
 cents: sents
 champions: championz
 changed: changd
 changes: changez
+channels: channelz
 charging: chargin
 chatter: chattr
 checking: checkin
 cheeseburger: cheezburger
 cheeseburgers: cheezburgers
+chipped: chippd
 choose: chooz
+choosing: choosin
 cities: citiez
 class: clas
 clever: clevr
@@ -202,6 +216,7 @@ conclusion: conclushun
 condition: condishun
 confessing: confessin
 configuration: configurashun
+confines: confinez
 confirmation: confirmashun
 confusion: confushun
 connection: connecshun
@@ -262,6 +277,7 @@ decisions: decishuns
 dedicated: dedicatd
 deduction: deducshun
 deductions: deducshuns
+defeats: defeatz
 defective: defectiv
 definition: definishun
 definitions: definishuns
@@ -279,9 +295,12 @@ description: descripshun
 descriptions: descripshuns
 designed: designd
 designer: designr
+designers: designerz
+designs: designz
 destined: destind
 destroyed: destroyd
 detailed: detaild
+details: detailz
 determination: determinashun
 determined: determind
 developer: developr
@@ -293,15 +312,18 @@ digitizing: digitizin
 diluted: dilutd
 dimension: dimenshun
 dinner: dinnr
+dipped: dippd
 direction: direcshun
 directions: direcshuns
 directories: directoriez
 disabled: diabld
 disagreeing: disagreein
 disappearing: disapperin
+disappointing: disappointin
 discovered: discoverd
 discussion: discushun
 disliked: dislikd
+dismiss: dismis
 dismissed: dismissd
 dismissing: dismissin
 displayed: displayd
@@ -314,6 +336,7 @@ ditched: ditchd
 division: divishun
 divisions: divishuns
 do: doez
+docs: docz
 documentation: documentashun
 does: doez
 dogged: doggd
@@ -335,6 +358,8 @@ drowned: drownd
 during: durin
 dvds: dvdz
 eagles: eaglez
+earlier: earlir
+easier: easir
 eclipsing: eclipsin
 economics: economicz
 edition: edishun
@@ -355,6 +380,8 @@ encountering: encounterin
 encourages: encouragez
 encouraging: encouragin
 encryption: encrypshun
+endeavors: endeavorz
+ended: endd
 ending: endin
 endorsed: endorsd
 endorsing: endorsin
@@ -406,6 +433,7 @@ expressions: expreshuns
 extensive: extensiv
 faces: facez
 failed: faild
+failing: failin
 failures: failurez
 fake: faek
 fans: fanz
@@ -435,6 +463,7 @@ fonts: fontz
 football: futball
 for: "4"
 forced: forcd
+formats: formatz
 formed: formd
 forms: formz
 fortunes: fortunez
@@ -457,6 +486,7 @@ functions: funcshuns
 further: furthr
 gartner: gartnr
 gave: gaev
+gawker: gawkr
 generated: generatd
 generates: generatez
 generating: generatin
@@ -487,6 +517,7 @@ guaranteed: guaranted
 guess: gues
 guessed: guessd
 guessing: guessin
+guys: guyz
 half: haf
 handed: handd
 hands: hanz
@@ -495,6 +526,7 @@ happened: happend
 happening: happenin
 happy: happeh
 have: has
+having: havin
 head: hed
 headed: headd
 heads: headz
@@ -503,6 +535,7 @@ hearing: hearin
 hearings: hearingz
 heartwarming: heartwarmin
 hearwarming: heartwarmin
+heels: heelz
 hello: "y halo thar"
 help: halp
 helped: helpd
@@ -564,6 +597,7 @@ installing: installin
 instruction: instrucshun
 instructions: instrucshuns
 integration: integrashn
+intended: intendd
 interaction: interacshun
 interactive: interactiv
 interested: interestd
@@ -591,16 +625,20 @@ its: itz
 itunes: itunez
 jackassyness: jackasynes
 james: jamez
+jaws: jawz
+jibes: jibez
 jiminy: omgwtfbbq
 jobs: jobz
 joined: joind
 joining: joinin
 joking: jokin
+jones: jonez
 jostling: jostlin
 judged: judgd
 judging: judgin
 jumped: jumpd
 just: jus
+keeping: keepin
 kicking: kickin
 killed: killd
 know: knoe
@@ -619,9 +657,12 @@ learned: learnd
 learning: lernin
 leave: leef
 legislature: legislachur
+legs: legz
 lens: lenz
 leopard: lepprd
 less: les
+lets: letz
+levels: levelz
 leveraging: leveragin
 levereaging: leveragin
 licensing: licensin
@@ -638,6 +679,7 @@ live: liv
 living: livin
 loaded: loadd
 loading: loadin
+longer: longr
 looking: lukingz
 looks: lookz
 losing: losin
@@ -652,8 +694,10 @@ macbooks: macbookz
 machine: masheen
 machines: masheens
 macs: macz
+magazines: magazinez
 maintained: maintaind
 make: mak
+maker: makr
 makers: makerz
 makes: makez
 making: makin
@@ -665,6 +709,7 @@ market: markit
 marketing: marketin
 markets: marketz
 mass: mas
+matter: mattr
 maximizing: maximizin
 may: cud
 meaning: meanin
@@ -680,6 +725,7 @@ mentioned: menshund
 merchandise: merchandize
 message: mesage
 messages: mesagez
+messenger: messengr
 migration: migrashun
 minded: mindd
 minds: mindz
@@ -696,6 +742,7 @@ mocking: mockn
 models: modelz
 monday: mondai
 more: moar
+mother: mothr
 motion: moshun
 move: moov
 moves: movez
@@ -733,6 +780,7 @@ numbers: numberz
 obligation: obligashun
 observation: observashun
 observations: observashuns
+observer: observr
 observers: observerz
 obtained: obtaind
 occasional: occashunal
@@ -774,6 +822,7 @@ owed: owd
 owned: ownd
 owner: ownr
 owners: ownerz
+owns: ownz
 packaging: packagin
 page: paeg
 pages: pagez
@@ -812,10 +861,12 @@ platforms: platformz
 played: playd
 players: playerz
 playing: playin
+plays: playz
 please: plz
 pointing: pointin
 polling: pollin
 pondering: ponderin
+pops: popz
 portals: portalz
 portion: porshun
 portions: porshuns
@@ -824,6 +875,7 @@ positive: positiv
 possession: posesshun
 possible: posible
 posted: postd
+poster: postr
 pounced: pouncd
 praises: praisez
 preceding: precedin
@@ -846,10 +898,12 @@ primaries: primariez
 printed: printd
 printing: printin
 priorities: prioritiez
+prizes: prizez
 problems: problemz
 process: proces
 processing: processin
 produced: producd
+produces: producez
 production: producshun
 products: productz
 professional: profeshunal
@@ -862,6 +916,7 @@ promising: promisun
 promotional: promoshunal
 properties: propertiez
 protective: protectiv
+proving: provin
 publications: publicashuns
 publishers: publisherz
 publishing: publishin
@@ -883,7 +938,9 @@ raised: raisd
 raises: raisez
 rands: randz
 rather: rathr
+reached: reachd
 reaction: reacshun
+reader: readr
 readers: readerz
 reading: readin
 realizing: realizin
@@ -902,6 +959,7 @@ referring: referrin
 refusing: refusin
 regarding: regardin
 regardless: regardles
+register: registr
 rejected: rejectd
 related: relatd
 relatives: relativez
@@ -913,6 +971,7 @@ remarks: remarkz
 remember: remembr
 reminder: remindr
 reminding: remindin
+reminds: remindz
 removed: removd
 rendering: rendrin
 renowned: renownd
@@ -934,6 +993,7 @@ resolution: resolushun
 resources: resourcez
 respected: respectd
 responses: responsez
+restless: restles
 restoration: restorashun
 resulted: resultd
 results: resultz
@@ -950,6 +1010,8 @@ ripping: rippin
 robbed: robbd
 rolling: rollin
 rotation: rotashun
+rows: rowz
+rules: rulez
 rumors: rumorz
 running: runnin
 runs: runz
@@ -974,6 +1036,7 @@ screenshots: screenshotz
 screwed: screwd
 script: skript
 scripting: scriptin
+scripts: scriptz
 scripture: scripchur
 scrolling: scrollin
 searching: searchin
@@ -1005,6 +1068,7 @@ session: seshun
 sessions: seshuns
 settings: settingz
 shared: shard
+shareholder: shareholdr
 shareholders: shareholderz
 shipped: shippd
 shipping: shippin
@@ -1014,6 +1078,7 @@ shortcuts: shortcutz
 should: shud
 showed: showd
 showing: showin
+sidelines: sidelinez
 signals: signalz
 signups: signupz
 silver: silvr
@@ -1059,6 +1124,7 @@ spreadsheets: spreadsheetz
 squeezed: squeezd
 stacks: stackz
 standardized: standardizd
+stands: standz
 started: startd
 starting: startin
 starts: startz
@@ -1079,6 +1145,7 @@ stored: stord
 stories: storiez
 strapped: strappd
 strategies: strategiez
+strengths: strengthz
 strikes: strikez
 striking: strikin
 string: strin
@@ -1097,6 +1164,7 @@ suffers: sufferz
 suggested: suggestd
 suggestions: sugesshuns
 suited: suitd
+summarizes: summarizez
 super: supr
 superduper: superdupr
 suppliers: supplierz
@@ -1107,6 +1175,8 @@ supposed: supposd
 suprise: surprize
 surprising: surprisn
 sutied: suitd
+sweater: sweatr
+swelled: swelld
 switched: switchd
 switches: switchez
 swizzling: swizzlin
@@ -1162,6 +1232,7 @@ together: togehtr
 tomorrow: "2morrow"
 tonight: tonite
 too: "2"
+tools: toolz
 tossup: tosup
 touches: touchez
 touted: toutd
@@ -1204,6 +1275,7 @@ undefeated: undefeatd
 under: undr
 underscores: underscorez
 undervalued: undervalud
+unexpected: unexpectd
 units: unitz
 unless: unles
 unsolicited: unsolicitd
@@ -1212,9 +1284,12 @@ unwise: unwize
 upcoming: upcomin
 updated: updatd
 updates: updatez
+upgraded: upgradd
 upgrades: upgradez
+uploads: uploadz
 upper: uppr
 used: usd
+user: usr
 users: userz
 uses: usez
 using: usin
@@ -1228,10 +1303,12 @@ versions: vershuns
 very: vary
 videotapes: videotapez
 videotaping: videotapin
+viewers: viewerz
 vindicated: vindicatd
 violations: violashuns
 virtualization: virtualizashun
 vision: vishun
+visionless: vishunles
 visions: vishuns
 visited: visietd
 visualization: visualizashun
@@ -1244,12 +1321,14 @@ want: wants
 wanted: wantd
 wanting: wantin
 warming: warmin
+warner: warnr
 was: wuz
 watching: watchin
 way: wai
 "we'll": well
 "we're": were
 weakness: weaknes
+webapps: webappz
 website: websiet
 websites: websiets
 weekday: weekdai
@@ -1263,10 +1342,12 @@ whether: whethr
 whipped: whippd
 who: hoo
 why: y
+wiggling: wigglin
 willing: willin
 windows: windowz
 winners: winnerz
 winning: winnin
+wired: wird
 wished: wishd
 wishes: wishez
 with: wif
