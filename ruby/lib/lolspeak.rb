@@ -1,13 +1,12 @@
 $KCODE = "UTF-8"
 
+require 'lolspeak/version'
 require 'yaml'
 require 'rexml/document'
 require 'cgi'
 
 # This module encapsulates the English to LOLspeak translator.
 module LOLspeak
-  VERSION = "1.0.0"
-  
   # A class to perform English to LOLspeak translation based on a dictionary
   # of words.
   class Tranzlator

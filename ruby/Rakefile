@@ -4,7 +4,8 @@ require 'rake/testtask'
 require 'rake/rdoctask'
 require 'rake/gempackagetask'
 
-require 'lib/lolspeak'
+$LOAD_PATH.unshift 'lib'
+require 'lolspeak/version'
 
 $KCODE = "UTF-8"
 
@@ -22,7 +23,11 @@ PKG_VERSION = LOLspeak::VERSION
 PKG_FILES = FileList[
   '[A-Z]*', 
   'bin/**/*',
-  'lib/**/*',
+  'lib/**/*.rb',
+  # Add this manually, because it's copied. If it doesn't exist at the time
+  # this is run, the wildcard won't pick it up, and it won't be included
+  # in the final package.
+  'lib/lolspeak/tranzlator.yml',
   'test/**/*',
 ]
 
@@ -53,3 +58,17 @@ Rake::GemPackageTask.new(spec) do |pkg|
   pkg.need_zip = true
   pkg.need_tar = true
 end
+
+
+SRC_TRANZ = "../tranzlator.yml"
+DEST_TRANZ = "lib/lolspeak/tranzlator.yml"
+
+if File.exists? SRC_TRANZ
+  file DEST_TRANZ => [SRC_TRANZ] do
+    safe_ln(SRC_TRANZ, DEST_TRANZ)
+  end
+  task :tranzlator => DEST_TRANZ
+  task :test_units => [:tranzlator]
+  task :package => [:tranzlator]
+end
+
