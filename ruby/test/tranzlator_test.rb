@@ -114,6 +114,12 @@ class TranzlatorTest < Test::Unit::TestCase
       t.translate_xml_string("<b>foobar</b>")
   end
   
+  def test_tranzlate_xml_string_normalize
+    t = new_tranzlator
+    assert_equal "<b>me</b>",
+      t.translate_xml_string("<b>I&#8217;m</b>")
+  end
+  
   def test_tranzlate_xml_string_with_filter
     t = new_tranzlator
     assert_equal "<b>OH HAI&NBSP;EAT</b>",

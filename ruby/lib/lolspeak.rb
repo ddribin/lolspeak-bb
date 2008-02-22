@@ -151,9 +151,9 @@ module LOLspeak
     #
     def translate_xml_element!(xml_element, &filter)
       xml_element.texts.each do |text|
-        string = text.to_s
+        string = REXML::Text::unnormalize(text.to_s)
         string = self.translate_words(string) do |w|
-          w = CGI.escapeHTML(w)
+          w = REXML::Text::normalize(w)
           w = filter.call(w) if !filter.nil?
           w
         end
