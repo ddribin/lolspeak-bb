@@ -6,6 +6,7 @@ require 'rexml/document'
 require 'cgi'
 
 # This module encapsulates the English to LOLspeak translator.
+# See LOLspeak::Tranzlator for more information.
 module LOLspeak
   # A class to perform English to LOLspeak translation based on a dictionary
   # of words.
