@@ -31,6 +31,7 @@ addresses: addressez
 adds: addz
 administration: administrashun
 admission: admishun
+adopters: adopterz
 advanced: advancd
 advertisers: advertiserz
 advertising: advertisin
@@ -53,6 +54,7 @@ alternating: alternatin
 alternative: alternativ
 alternatives: alternativez
 always: alwayz
+amazing: amazin
 analyzing: analyzin
 anchored: anchord
 and: an
@@ -63,6 +65,8 @@ announced: announcd
 annoyed: annoyd
 annoying: annoyin
 another: anothr
+answer: anzwr
+answered: anzwerd
 answering: answerin
 answers: anzwrs
 antialiasing: antialiasin
@@ -94,9 +98,12 @@ assets: assetz
 assimilation: assimilashun
 assumed: assumd
 assuming: assumin
+assumption: assumpshun
 astonishing: astonishin
 astounding: astoundin
 attached: attachd
+attacker: attackr
+attacks: attackz
 attempted: attemptd
 attempting: attemptin
 attention: attenshun
@@ -130,6 +137,7 @@ beaking: breakin
 because: cuz
 becomes: becomez
 before: "b4"
+beginning: beginnin
 beijing: beijin
 being: bein
 beleaguered: beleaguerd
@@ -140,6 +148,7 @@ belongs: belongz
 benchmarks: benchmarkz
 bends: bendz
 benefits: benefitz
+betrays: betrayz
 better: bettr
 between: tween
 big: hooj
@@ -149,6 +158,7 @@ binaries: binariez
 birthday: birfdai
 blocks: blockz
 bloggers: bloggerz
+blogging: bloggin
 blows: blowz
 board: bord
 boing: boin
@@ -157,6 +167,8 @@ booked: bookd
 bookies: bookiez
 bookmarks: bookmarkz
 books: bookz
+bootlegged: bootleggd
+bootlegging: bootleggin
 borders: borderz
 boring: borin
 boss: bos
@@ -187,6 +199,7 @@ busted: bustd
 buying: buyin
 buys: buyz
 bye: kthxbye
+cables: cablez
 calculated: calculatd
 called: calld
 calls: callz
@@ -196,6 +209,7 @@ cans: canz
 capitalization: capitalizashun
 capping: cappin
 capture: capchure
+captured: capturd
 carrier: carrir
 cars: carz
 cat: kitteh
@@ -229,6 +243,7 @@ class: clas
 clearer: clearr
 clever: clevr
 clicking: clickin
+clients: clientz
 closes: closez
 closing: closin
 coders: coderz
@@ -239,6 +254,7 @@ colleagues: colleaguez
 collection: collecshun
 collections: collecshuns
 collects: collectz
+columns: columnz
 combination: combinashun
 comes: comez
 coming: comin
@@ -248,6 +264,7 @@ commercial: commershul
 commercials: commershuls
 commission: commishun
 communicated: speekd
+communicating: communicatin
 commuter: commutr
 companies: companiez
 compares: comparez
@@ -271,6 +288,7 @@ compromised: compromisd
 computer: computr
 computers: computerz
 computing: computin
+concerns: concernz
 concluded: concludd
 concludes: concludez
 conclusion: conclushun
@@ -280,8 +298,10 @@ confessing: confessin
 configuration: configurashun
 confines: confinez
 confirmation: confirmashun
+confirmed: confirmd
 confronted: confrontd
 confusion: confushun
+congratulations: congratulashuns
 congress: congres
 connection: connecshun
 connections: connecshuns
@@ -302,7 +322,10 @@ consumes: consumez
 consuming: consumin
 consummated: consummatd
 contacted: contactd
+contains: containz
+contents: contentz
 continues: continuez
+contradiction: contradicshun
 contrived: contrivd
 controlled: controlld
 controller: controllr
@@ -316,6 +339,7 @@ converted: convertd
 convinced: convincd
 coordinates: coordinatez
 coordination: coordinashun
+copies: copiez
 corporation: corporashun
 costs: costz
 could: cud
@@ -333,16 +357,19 @@ credentials: credenshuls
 crendital: credenshul
 criticism: critisizm
 critics: criticz
+crowned: crownd
 crumbling: crumblin
 cubes: cubez
 customer: customr
 customers: customerz
+cutter: cuttr
 cutting: cuttin
 danger: dangr
 daring: darin
 day: dai
 days: dais
 dead: ded
+deals: dealz
 debuted: debutd
 december: decembr
 deception: decepshun
@@ -351,6 +378,7 @@ decides: decidez
 deciding: decidin
 decision: decishun
 decisions: decishuns
+decrypting: decryptin
 dedicated: dedicatd
 deduction: deducshun
 deductions: deducshuns
@@ -395,6 +423,7 @@ developer: developr
 developers: developrz
 devices: devicez
 "didn't": didnt
+died: did
 differencing: differencin
 digging: diggin
 digitizing: digitizin
@@ -410,6 +439,7 @@ disabled: diabld
 disagreeing: disagreein
 disappearing: disapperin
 disappointing: disappointin
+discounted: discountd
 discovered: discoverd
 discussion: discushun
 discussions: discushuns
@@ -418,6 +448,7 @@ dismiss: dismis
 dismissed: dismissd
 dismisses: dismisez
 dismissing: dismissin
+dispatches: dispatchez
 displayed: displayd
 displays: displayz
 disputed: disputd
@@ -440,6 +471,7 @@ donation: donashun
 donations: donashuns
 done: dun
 doors: doorz
+doubled: doubld
 doubters: doubterz
 doubting: doubtin
 downgrading: downgradin
@@ -471,6 +503,7 @@ either: eithr
 election: elecshun
 elements: elementz
 elongated: elongatd
+emailed: emaild
 emerging: emergin
 emphasis: emfasiz
 emphasizing: emphasizin
@@ -511,6 +544,7 @@ errors: errorz
 escaping: escapin
 essential: essenshul
 established: establishd
+establishing: establishin
 ether: ethr
 evaluating: evaluatin
 eventually: evenshully
@@ -581,6 +615,7 @@ filter: filtr
 financial: finanshul
 finder: findr
 finished: finishd
+fired: fird
 first: furst
 fits: fitz
 fixed: fixd
@@ -597,6 +632,7 @@ fonts: fontz
 football: futball
 for: "4"
 forced: forcd
+forcing: forcin
 foregoing: foregoin
 formats: formatz
 formatted: formattd
@@ -628,6 +664,7 @@ full: fol
 function: funcshun
 functions: funcshuns
 further: furthr
+galleries: galleriez
 games: gamez
 gaping: gapin
 gartner: gartnr
@@ -643,6 +680,7 @@ gets: getz
 getting: gettin
 giant: hooj
 giants: giantz
+ginned: ginnd
 girl: gurl
 give: giv
 gives: givez
@@ -652,6 +690,7 @@ glorified: glorifid
 goes: goez
 going: goin
 good: gud
+goodies: goodiez
 graphed: grafd
 graphic: grafic
 graphics: grafic
@@ -676,6 +715,7 @@ handed: handd
 handicaps: handicapz
 handles: handlez
 hands: hanz
+hanging: hangin
 happend: happend
 happened: happend
 happening: happenin
@@ -717,6 +757,7 @@ holiday: holidai
 holidays: holidais
 hoped: hopd
 hopelessly: hopelesly
+hosting: hostin
 hours: hourz
 house: houz
 however: howevr
@@ -738,6 +779,7 @@ imaginig: imaginin
 imagining: imaginin
 implementation: implementashun
 implemented: implementd
+implies: impliez
 impressed: impresd
 impressions: impreshuns
 improve: improov
@@ -749,12 +791,14 @@ includes: includez
 including: includin
 increased: increasd
 increases: increasez
+increasing: increasin
 indeed: inded
 indentation: indentashun
 indentations: indentashuns
 indicated: indicatd
 indicates: indicatez
 individuals: individualz
+infection: infecshun
 infects: infectz
 influenced: influencd
 information: informashun
@@ -767,6 +811,7 @@ inspiration: inspirashun
 inspired: inspird
 inspiring: inspirin
 installation: installashun
+installations: installashuns
 installed: installd
 installing: installin
 instruction: instrucshun
@@ -774,6 +819,7 @@ instructions: instrucshuns
 integrates: integratez
 integration: integrashn
 intended: intendd
+intentions: intenshuns
 interaction: interacshun
 interactive: interactiv
 interested: interestd
@@ -810,6 +856,7 @@ jackass: jackas
 jackassyness: jackasynes
 james: jamez
 jaws: jawz
+jesus: jebus
 jibes: jibez
 jiminy: omgwtfbbq
 jobs: jobz
@@ -825,9 +872,12 @@ jumping: jumpin
 just: jus
 keeping: keepin
 keeps: keepz
+keys: keyz
 kicking: kickin
+kidding: kiddin
 kids: kidz
 killed: killd
+killer: killr
 know: knoe
 knows: knowz
 labelled: labeld
@@ -843,6 +893,7 @@ laugh: laff
 launched: launchd
 laws: lawz
 layers: layerz
+layouts: layoutz
 lazytwitter: lazytwittr
 leaders: leaderz
 leading: leadin
@@ -884,6 +935,7 @@ location: locashun
 logicians: logicianz
 logs: logz
 longer: longr
+looked: lookd
 looking: lukingz
 looks: lookz
 losing: losin
@@ -900,11 +952,13 @@ machines: masheens
 macs: macz
 magazines: magazinez
 maintained: maintaind
+maintaining: maintainin
 make: mak
 maker: makr
 makers: makerz
 makes: makez
 making: makin
+malicious: malishus
 managers: managerz
 managing: managin
 manipulation: manipulashun
@@ -912,6 +966,7 @@ manning: manning
 manufacture: manufacchur
 manufacturing: manufacturin
 many: "lotz da"
+mapping: mappin
 maps: mapz
 market: markit
 marketing: marketin
@@ -943,6 +998,7 @@ minded: mindd
 minds: mindz
 miniaturization: miniaturizashun
 minutes: minutez
+mischaracterization: mischaracterizashun
 misd: missd
 misleading: misleadin
 miss: mis
@@ -952,6 +1008,7 @@ missing: missin
 mission: mishun
 missions: mishuns
 mistakes: mistakez
+misunderstanding: misunderstandin
 mocking: mockn
 models: modelz
 monday: mondai
@@ -1001,6 +1058,9 @@ nuggets: nuggetz
 number: numbr
 numbered: numbrd
 numbers: numberz
+nytimes: nytimez
+objected: objectd
+objections: objecshuns
 obligation: obligashun
 observation: observashun
 observations: observashuns
@@ -1010,6 +1070,7 @@ obtained: obtaind
 obviating: obviatin
 occasional: occashunal
 occasionally: occashunally
+occasions: occashuns
 occurring: occurrin
 october: octobr
 of: ov
@@ -1023,6 +1084,7 @@ ok: k
 omission: omishun
 one: wan
 ones: onez
+ongoing: ongoin
 opening: openin
 opens: openz
 operating: operatin
@@ -1088,6 +1150,7 @@ performed: performd
 performs: performz
 perhaps: perhapz
 perkins: perkinz
+permissions: permishuns
 perplexed: perplexd
 perspective: perspectiv
 peter: petr
@@ -1100,6 +1163,7 @@ phones: fonez
 photographers: fotografers
 photographs: fotografs
 photos: fotos
+phrasing: frasin
 physicist: fysicist
 physics: fysics
 picked: pickd
@@ -1109,6 +1173,7 @@ pictures: picturez
 pinching: pinchin
 pirated: piratd
 places: placez
+plagued: plagud
 planning: plannin
 plans: planz
 platforms: platformz
@@ -1121,6 +1186,7 @@ please: plz
 pleasing: pleasin
 plugging: pluggin
 plugins: pluginz
+podcasts: podcastz
 pointing: pointin
 points: pointz
 polling: pollin
@@ -1137,6 +1203,7 @@ possibilities: possibilitiez
 possible: posible
 posted: postd
 poster: postr
+posts: postz
 pounced: pouncd
 power: powr
 powered: powerd
@@ -1166,12 +1233,14 @@ principles: principlez
 printed: printd
 printing: printin
 priorities: prioritiez
+privileges: privilegez
 prizes: prizez
 problems: problemz
 proceed: proced
 process: proces
 processing: processin
 produced: producd
+producer: producr
 produces: producez
 production: producshun
 products: productz
@@ -1181,6 +1250,7 @@ profressional: profeshunal
 profressionals: profeshunals
 programming: programmin
 progress: progres
+projects: projectz
 promising: promisun
 promoting: promotin
 promotional: promoshunal
@@ -1189,6 +1259,7 @@ properties: propertiez
 prospects: prospectz
 protective: protectiv
 proves: provez
+provided: providd
 provider: providr
 providing: providin
 proving: provin
@@ -1210,6 +1281,7 @@ quarter: quartr
 quarters: quarterz
 question: queshun
 questions: quesshuns
+queued: queud
 quitting: quittin
 radioactive: radioactiv
 rails: railz
@@ -1223,10 +1295,12 @@ reaction: reacshun
 reader: readr
 readers: readerz
 reading: readin
+reads: readz
 realizing: realizin
 really: rly
 reasons: reasonz
 recalls: recallz
+receipts: receiptz
 received: receivd
 receiver: receivr
 recent: resent
@@ -1237,6 +1311,7 @@ recorder: recordr
 recording: recordin
 recurring: recurrin
 reducing: reducin
+reduction: reducshun
 referring: referrin
 refusing: refusin
 regarding: regardin
@@ -1262,6 +1337,8 @@ removed: removd
 render: rendr
 rendering: rendrin
 renowned: renownd
+rented: rentd
+repairing: repairin
 repeats: repeatz
 repercussions: repercushuns
 replied: replid
@@ -1294,6 +1371,8 @@ retention: retenshun
 reveals: revealz
 revenues: revenuez
 reverses: reversez
+reviewed: reviewd
+reviews: reviewz
 revolution: revolushun
 revolutionary: revolushunary
 rewards: rewardz
@@ -1308,6 +1387,7 @@ robotics: roboticz
 rolling: rollin
 rotation: rotashun
 rows: rowz
+rugged: ruggd
 rules: rulez
 rumored: rumord
 rumors: rumorz
@@ -1338,6 +1418,7 @@ score: skor
 scored: scord
 screenshots: screenshotz
 screwed: screwd
+screws: screwz
 script: skript
 scripting: scriptin
 scripts: scriptz
@@ -1367,6 +1448,7 @@ sells: sellz
 sending: sendin
 separation: separashun
 sepbember: septembr
+series: seriez
 seriously: srsly
 served: servd
 server: servr
@@ -1388,6 +1470,7 @@ shipping: shippin
 ships: shipz
 shitting: shittin
 shocking: shockin
+shortcomings: shortcomingz
 shortcuts: shortcutz
 shorter: shortr
 should: shud
@@ -1398,6 +1481,7 @@ shrinks: shrinkz
 sidelines: sidelinez
 signals: signalz
 signing: signin
+signs: signz
 signups: signupz
 silver: silvr
 sinking: sinkin
@@ -1411,6 +1495,7 @@ sketching: sketchin
 skewed: skewd
 slides: slidez
 slimmed: slimmd
+slower: slowr
 slumping: slumpin
 smaller: smallr
 smartphone: smartfone
@@ -1428,6 +1513,7 @@ something: somethin
 sometimes: sometimez
 sophisticated: sofisticatd
 sorry: sry
+sounding: soundin
 sounds: soundz
 sources: sourcez
 sourcing: sourcin
@@ -1482,6 +1568,7 @@ stories: storiez
 strained: straind
 strapped: strappd
 strategies: strategiez
+streaming: streamin
 streamlined: streamlind
 strengths: strengthz
 strikes: strikez
@@ -1504,6 +1591,7 @@ suffer: suffr
 suffers: sufferz
 suggested: suggestd
 suggestions: sugesshuns
+suggests: suggestz
 suited: suitd
 summarizes: summarizez
 super: supr
@@ -1548,11 +1636,13 @@ tasting: tastin
 teaching: teachin
 teams: teamz
 techniques: techniquez
+technologies: technologiez
 telephotos: telefotoz
 telling: tellin
 terms: termz
 tester: testr
 testing: testin
+tests: testz
 textwrangler: textwranglr
 thanks: thx
 that: dat
@@ -1614,6 +1704,7 @@ transmitted: transmittd
 treated: treatd
 trekked: trekkd
 triangulation: triangulashun
+tricks: trickz
 tried: trid
 triggering: triggerin
 trimming: trimmin
@@ -1622,6 +1713,7 @@ troubling: troublin
 trying: tryin
 tuesday: tuesdai
 turned: turnd
+turns: turnz
 tweeted: tweetd
 tweets: tweetz
 twitter: twittr
@@ -1638,6 +1730,7 @@ underlying: underlyin
 underpowered: underpowerd
 underscores: underscorez
 understanding: understandin
+undertaking: undertakin
 undervalued: undervalud
 unexpected: unexpectd
 united: unitd
@@ -1664,6 +1757,7 @@ uses: usez
 using: usin
 utilities: utilitiez
 utter: uttr
+vader: vadr
 variables: variablez
 vending: vendin
 version: vershun
@@ -1698,6 +1792,7 @@ warned: warnd
 warner: warnr
 was: wuz
 watching: watchin
+watered: waterd
 way: wai
 ways: wayz
 "we'll": well
@@ -1725,6 +1820,7 @@ widgets: widgetz
 wiggling: wigglin
 willing: willin
 windows: windowz
+winner: winnr
 winners: winnerz
 winning: winnin
 wins: winz
@@ -1741,6 +1837,7 @@ words: werdz
 work: werk
 workaround: werkaround
 worked: werkd
+worker: werkr
 working: werkin
 works: werkz
 workstation: workstashun
@@ -1761,6 +1858,7 @@ years: yeers
 yesterday: yesterdai
 you: u
 "you'd": ud
+younger: youngr
 your: ur
 yours: urz
 zoomer: zoomr
