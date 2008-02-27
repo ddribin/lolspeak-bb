@@ -50,6 +50,7 @@ airtunes: airtunez
 allowed: allowd
 allowing: allowin
 allows: allowz
+alpha: alfa
 alternating: alternatin
 alternative: alternativ
 alternatives: alternativez
@@ -121,6 +122,7 @@ background: bakground
 backing: backin
 backup: bakup
 backups: backupz
+baffled: baffld
 baked: bakd
 balked: balkd
 balkled: balkd
@@ -208,6 +210,7 @@ canned: cannd
 cans: canz
 capitalization: capitalizashun
 capping: cappin
+caps: capz
 capture: capchure
 captured: capturd
 carrier: carrir
@@ -357,6 +360,7 @@ credentials: credenshuls
 crendital: credenshul
 criticism: critisizm
 critics: criticz
+crossed: crossd
 crowned: crownd
 crumbling: crumblin
 cubes: cubez
@@ -407,6 +411,7 @@ described: describd
 describes: describez
 description: descripshun
 descriptions: descripshuns
+deserves: deservez
 designed: designd
 designer: designr
 designers: designerz
@@ -460,6 +465,7 @@ division: divishun
 divisions: divishuns
 do: doez
 docs: docz
+doctored: doctord
 documentation: documentashun
 dodging: dodgin
 does: doez
@@ -502,6 +508,7 @@ effects: effectz
 either: eithr
 election: elecshun
 elements: elementz
+elmer: elmr
 elongated: elongatd
 emailed: emaild
 emerging: emergin
@@ -614,6 +621,7 @@ files: filez
 filter: filtr
 financial: finanshul
 finder: findr
+fingers: fingerz
 finished: finishd
 fired: fird
 first: furst
@@ -691,6 +699,7 @@ goes: goez
 going: goin
 good: gud
 goodies: goodiez
+graggers: graggerz
 graphed: grafd
 graphic: grafic
 graphics: grafic
@@ -761,6 +770,7 @@ hosting: hostin
 hours: hourz
 house: houz
 however: howevr
+hughes: hughez
 humorless: humorles
 hundred: hundrd
 hundreds: hundredz
@@ -787,6 +797,7 @@ improve: improov
 improved: improovd
 improvements: improovements
 inception: incepshun
+inches: inchez
 included: includd
 includes: includez
 including: includin
@@ -802,6 +813,7 @@ individuals: individualz
 infection: infecshun
 infects: infectz
 influenced: influencd
+infographic: infografic
 information: informashun
 informed: informd
 infuriating: infriatin
@@ -843,6 +855,7 @@ invokes: invokez
 involved: involvd
 iphone: ifone
 iphones: ifonez
+iphoto: ifoto
 ipods: ipodz
 is: iz
 "isn't": isnt
@@ -866,6 +879,7 @@ joining: joinin
 joking: jokin
 jones: jonez
 jostling: jostlin
+journalists: journalistz
 judged: judgd
 judging: judgin
 jumped: jumpd
@@ -873,7 +887,9 @@ jumping: jumpin
 just: jus
 keeping: keepin
 keeps: keepz
+keyboards: keyboardz
 keys: keyz
+keywords: keywordz
 kicking: kickin
 kidding: kiddin
 kids: kidz
@@ -881,7 +897,10 @@ killed: killd
 killer: killr
 know: knoe
 knows: knowz
+labeled: labeld
+labeling: labelin
 labelled: labeld
+labels: labelz
 laboratories: laboratoriez
 labs: labz
 ladies: ladiez
@@ -952,6 +971,7 @@ machine: masheen
 machines: masheens
 macs: macz
 magazines: magazinez
+mailboxes: mailboxez
 maintained: maintaind
 maintaining: maintainin
 make: mak
@@ -1044,6 +1064,7 @@ news: newz
 newsletter: newslettr
 newspaper: nespapr
 nomination: nominashun
+nonetheless: nonetheles
 notes: notez
 nothing: nothin
 noticed: noticd
@@ -1158,6 +1179,7 @@ perspective: perspectiv
 peter: petr
 phil: fil
 philadelphia: filadelfia
+philip: filip
 phill: fill
 philosophy: filosofy
 phone: fone
@@ -1166,6 +1188,8 @@ photograph: fotograf
 photographers: fotografers
 photographs: fotografs
 photos: fotos
+photoshop: fotoshop
+phrase: frase
 phrasing: frasin
 physicist: fysicist
 physics: fysics
@@ -1216,6 +1240,7 @@ precious: preshus
 predicted: predictd
 predicting: predictin
 prediction: predicshun
+prefer: prefr
 preferences: preferences
 preferred: preferrd
 preparation: preparashun
@@ -1369,6 +1394,7 @@ restless: restles
 restoration: restorashun
 resulted: resultd
 results: resultz
+retailer: retailr
 retained: retaind
 retention: retenshun
 reveals: revealz
@@ -1376,6 +1402,7 @@ revenues: revenuez
 reverses: reversez
 reviewed: reviewd
 reviews: reviewz
+revises: revisez
 revolution: revolushun
 revolutionary: revolushunary
 rewards: rewardz
@@ -1427,6 +1454,7 @@ scripting: scriptin
 scripts: scriptz
 scripture: scripchur
 scrolling: scrollin
+seamless: seamles
 searches: searchez
 searching: searchin
 seating: seatin
@@ -1561,6 +1589,7 @@ staying: stayin
 stays: stayz
 steal: steel
 stealing: stealin
+stephenson: stefenson
 stepped: steppd
 steps: stepz
 sticking: stickin
@@ -1793,6 +1822,7 @@ wants: wantz
 warming: warmin
 warned: warnd
 warner: warnr
+wars: warz
 was: wuz
 watching: watchin
 watered: waterd
