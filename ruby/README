@@ -12,4 +12,7 @@ To install this via Ruby Gems:
 
   % sudo gem install lolspeak
 
-It also includes a command line application called lolspeak.
+It also includes a command line application called lolspeak:
+
+  % lolspeak "Hi there! You have a cute cat."
+  oh hai thar! u has cute kitteh.
