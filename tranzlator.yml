@@ -89,6 +89,7 @@ architecture: architecchur
 archive: archiv
 are: r
 argued: argud
+arising: arisin
 articles: articlez
 asisted: assistd
 asked: askd
@@ -97,6 +98,7 @@ asks: askz
 assembling: assemblin
 assets: assetz
 assimilation: assimilashun
+associated: associatd
 assumed: assumd
 assuming: assumin
 assumption: assumpshun
@@ -113,6 +115,7 @@ authentication: authenticashun
 authored: authord
 authorities: authoritiez
 authorized: authorizd
+authors: authorz
 autosaving: autosavin
 avoiding: avoidin
 awesome: awsum
@@ -226,6 +229,7 @@ challenges: challengez
 champions: championz
 changed: changd
 changes: changez
+changing: changin
 channels: channelz
 characters: characterz
 charges: chargez
@@ -297,6 +301,7 @@ concludes: concludez
 conclusion: conclushun
 condenses: condensez
 condition: condishun
+conditions: condishuns
 confessing: confessin
 configuration: configurashun
 confines: confinez
@@ -368,6 +373,7 @@ customer: customr
 customers: customerz
 cutter: cuttr
 cutting: cuttin
+damages: damagez
 danger: dangr
 daring: darin
 day: dai
@@ -625,6 +631,7 @@ fingers: fingerz
 finished: finishd
 fired: fird
 first: furst
+fitness: fitnes
 fits: fitz
 fixed: fixd
 fixes: fixez
@@ -671,6 +678,7 @@ fueled: fueld
 full: fol
 function: funcshun
 functions: funcshuns
+furnished: furnishd
 further: furthr
 galleries: galleriez
 games: gamez
@@ -759,6 +767,7 @@ hints: hintz
 hired: hird
 his: hims
 holder: holdr
+holders: holderz
 holding: holdin
 holdings: holdingz
 holds: holdz
@@ -790,6 +799,7 @@ imaginig: imaginin
 imagining: imaginin
 implementation: implementashun
 implemented: implementd
+implied: implid
 implies: impliez
 impressed: impresd
 impressions: impreshuns
@@ -1089,6 +1099,7 @@ observations: observashuns
 observer: observr
 observers: observerz
 obtained: obtaind
+obtaining: obtainin
 obviating: obviatin
 occasional: occashunal
 occasionally: occashunally
@@ -1173,8 +1184,10 @@ performed: performd
 performs: performz
 perhaps: perhapz
 perkins: perkinz
+permission: permishun
 permissions: permishuns
 perplexed: perplexd
+persons: personz
 perspective: perspectiv
 peter: petr
 phil: fil
@@ -1392,6 +1405,8 @@ responds: respondz
 responses: responsez
 restless: restles
 restoration: restorashun
+restriction: restricshun
+restrictions: restricshuns
 resulted: resultd
 results: resultz
 retailer: retailr
@@ -1613,6 +1628,7 @@ stunning: stunnin
 submissions: submishuns
 subscribers: subscriberz
 subscription: subscripshun
+substantial: substanshul
 substring: substrin
 subversion: subvershun
 succeed: succed
@@ -1822,6 +1838,7 @@ wants: wantz
 warming: warmin
 warned: warnd
 warner: warnr
+warranties: warrantiez
 wars: warz
 was: wuz
 watching: watchin
