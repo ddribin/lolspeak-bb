@@ -3,7 +3,7 @@ $KCODE = "UTF-8"
 require 'lolspeak/version'
 require 'yaml'
 require 'rexml/document'
-require 'cgi'
+require 'set'
 
 # This module encapsulates the English to LOLspeak translator.
 # See LOLspeak::Tranzlator for more information.
@@ -21,6 +21,8 @@ module LOLspeak
     # (Hash) Stores all words translated via heuristics, if try_heuristics is
     # true.
     attr_reader :translated_heuristics
+    # (Set) Words to exclude if heuristics are on.
+    attr_accessor :heuristics_exclude
     
     class << Tranzlator
       # Creates a Tranzlator using a dictionary from a YAML file
@@ -44,6 +46,7 @@ module LOLspeak
       @traced_words = {}
       @try_heuristics = false
       @translated_heuristics = {}
+      @heuristics_exclude = Set.new
     end
 
     # Translates a single word into LOLspeak. By default, the result is in all
@@ -78,7 +81,7 @@ module LOLspeak
         lol_word += suffix if !lol_word.nil?
       end
       
-      if lol_word.nil? and @try_heuristics
+      if lol_word.nil? and @try_heuristics and !@heuristics_exclude.member?(word)
         if (word =~ /(.*)tion(s?)$/)
           lol_word = "#{$1}shun#{$2}"
         elsif (word =~ /(.*)ed$/)
@@ -89,9 +92,14 @@ module LOLspeak
           lol_word = "#{$1}s"
         elsif (word =~ /(.*)er$/)
           lol_word = "#{$1}r"
-        elsif (word =~ /^([0-9A-Za-z_]+)s$/)
+        elsif (word !~ /ous$/) and (word =~ /^([0-9A-Za-z_]+)s$/)
           lol_word = "#{$1}z"
         end
+        if (word =~ /ph/)
+          lol_word = word.dup if lol_word.nil?
+          lol_word.gsub!(/ph/, 'f')
+        end
+
         if !lol_word.nil?
           @translated_heuristics[word] = lol_word
         end

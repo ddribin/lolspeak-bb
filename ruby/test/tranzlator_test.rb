@@ -240,10 +240,26 @@ EXPECTED
   def test_heuristics
     t = new_tranzlator
     t.try_heuristics = true
-    assert_equal "the mothr of invenshun",
+    assert_equal "the mothr of invenshun fotograf humorous foo's",
+      t.translate_words("the mother of invention photograph humorous foo's")
+
+    expected = {"mother" => "mothr", "invention" => "invenshun",
+      "photograph" => "fotograf"}
+    assert_equal expected, t.translated_heuristics
+    
+    expected = {}
+    t.clear_translated_heuristics
+    assert_equal expected, t.translated_heuristics
+  end
+  
+  def test_heuristics_exclude
+    t = new_tranzlator
+    t.try_heuristics = true
+    t.heuristics_exclude = Set.new ['invention']
+    assert_equal "the mothr of invention",
       t.translate_words("the mother of invention")
 
-    expected = {"mother" => "mothr", "invention" => "invenshun"}
+    expected = {"mother" => "mothr"}
     assert_equal expected, t.translated_heuristics
     
     expected = {}
