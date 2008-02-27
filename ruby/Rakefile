@@ -52,6 +52,10 @@ spec = Gem::Specification.new do |s|
   s.description = <<-EOF
   Translates English text into LOLspeak.
   EOF
+  
+  s.author = "Dave Dribin"
+  s.homepage = "http://www.dribin.org/dave/software/lolspeak/"
+  s.rubyforge_project = 'lolspeak'
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
