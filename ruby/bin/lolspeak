@@ -26,6 +26,9 @@
 # Copyright (c)  2008 Dave Dribin
 # Licensed under the MIT license.
 
+# This makes STDIN and STDOUT both act as containing UTF-8.
+$KCODE = 'u'
+
 require 'lolspeak'
 require 'optparse'
 require 'ostruct'
