@@ -63,6 +63,7 @@ animated: animatd
 animations: animashuns
 annoucing: annoucin
 announced: announcd
+announcing: announcin
 annoyed: annoyd
 annoying: annoyin
 another: anothr
@@ -188,6 +189,7 @@ breed: bred
 brewed: brewd
 bricks: brickz
 briefed: briefd
+brightness: brightnes
 bring: brin
 bringing: bringin
 brings: bringz
@@ -347,6 +349,7 @@ converted: convertd
 convinced: convincd
 coordinates: coordinatez
 coordination: coordinashun
+copied: copid
 copies: copiez
 corporation: corporashun
 costs: costz
@@ -366,6 +369,7 @@ crendital: credenshul
 criticism: critisizm
 critics: criticz
 crossed: crossd
+crowes: crowez
 crowned: crownd
 crumbling: crumblin
 cubes: cubez
@@ -423,6 +427,7 @@ designer: designr
 designers: designerz
 designing: designin
 designs: designz
+desperation: desperashun
 destined: destind
 destroyed: destroyd
 detailed: detaild
@@ -459,6 +464,7 @@ dismiss: dismis
 dismissed: dismissd
 dismisses: dismisez
 dismissing: dismissin
+disorder: disordr
 dispatches: dispatchez
 displayed: displayd
 displays: displayz
@@ -571,6 +577,7 @@ evolving: evolvin
 exactly: egsaktly
 examination: examinashun
 examples: examplez
+exasperated: exasperatd
 excellent: awsum
 exception: excepshun
 excited: excitd
@@ -588,6 +595,7 @@ expected: expectd
 expenditures: expenditurez
 experienced: experiencd
 experiences: experiencez
+explained: explaind
 explains: explainz
 explanation: explanashun
 explanations: explanashuns
@@ -738,6 +746,7 @@ happened: happend
 happening: happenin
 happens: happenz
 happy: happeh
+harder: hardr
 have: has
 having: havin
 head: hed
@@ -790,6 +799,7 @@ hurdles: hurdlez
 icons: iconz
 ideas: ideaz
 identified: identifid
+idiots: idiotz
 illusion: illushun
 illustration: illustrashun
 imacs: imacz
@@ -961,6 +971,7 @@ live: liv
 living: livin
 loaded: loadd
 loading: loadin
+localised: localisd
 location: locashun
 logicians: logicianz
 logs: logz
@@ -990,6 +1001,7 @@ makers: makerz
 makes: makez
 making: makin
 malicious: malishus
+manager: managr
 managers: managerz
 managing: managin
 manipulation: manipulashun
@@ -1015,12 +1027,15 @@ measures: measurez
 measuring: measurin
 mechanisms: mechanismz
 meeting: mettin
+megaphone: megafone
 member: membr
+members: memberz
 memoirs: memoirz
 memory: mems
 mention: menshun
 mentioned: menshund
 merchandise: merchandize
+mess: mes
 message: mesage
 messages: mesagez
 messenger: messengr
@@ -1049,6 +1064,7 @@ morning: mornin
 mother: mothr
 motion: moshun
 move: moov
+moved: movd
 moves: movez
 movies: moviez
 moving: movin
@@ -1059,6 +1075,7 @@ my: mah
 naked: nakd
 name: naym
 named: namd
+names: namez
 nation: nashun
 nationwide: nashunwide
 nature: nachur
@@ -1200,6 +1217,7 @@ phones: fonez
 photograph: fotograf
 photographers: fotografers
 photographs: fotografs
+photonic: fotonic
 photos: fotos
 photoshop: fotoshop
 phrase: frase
@@ -1222,6 +1240,7 @@ player: playr
 players: playerz
 playing: playin
 plays: playz
+playstation: playstashun
 please: plz
 pleasing: pleasin
 plugging: pluggin
@@ -1302,11 +1321,13 @@ protective: protectiv
 proves: provez
 provided: providd
 provider: providr
+provides: providez
 providing: providin
 proving: provin
 publication: publicashun
 publications: publicashuns
 publishers: publisherz
+publishes: publishez
 publishing: publishin
 pulled: pulld
 pulling: pullin
@@ -1331,6 +1352,7 @@ raises: raisez
 rands: randz
 ranks: rankz
 rather: rathr
+rating: ratin
 reached: reachd
 reaction: reacshun
 reader: readr
@@ -1458,6 +1480,7 @@ scathing: scathin
 scenes: scneez
 scheduled: scheduld
 scheduling: schedulin
+schizophrenia: schizofrenia
 schools: schoolz
 score: skor
 scored: scord
@@ -1591,6 +1614,7 @@ standardized: standardizd
 standards: standardz
 stands: standz
 starbucks: starbuckz
+stars: starz
 started: startd
 starting: startin
 starts: startz
@@ -1621,9 +1645,11 @@ strengths: strengthz
 strikes: strikez
 striking: strikin
 string: strin
+strips: stripz
 stronger: strongr
 structure: strucchur
 struggled: struggld
+students: studentz
 stunning: stunnin
 submissions: submishuns
 subscribers: subscriberz
@@ -1746,6 +1772,7 @@ transfer: transfr
 transformation: transformashun
 transition: transishun
 translate: tranzlate
+translated: translatd
 translation: translashun
 translator: tranzlator
 transmitted: transmittd
@@ -1897,6 +1924,7 @@ worst: wurst
 worth: wurth
 would: wud
 write: rite
+writer: writr
 writes: writez
 writing: writin
 written: writteh
