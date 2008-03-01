@@ -2,10 +2,12 @@ a: ""
 abhorred: abhorrd
 about: bout
 absorbed: absorbd
+accelerometer: accelerometr
 accepts: acceptz
 access: acces
 accessibility: accesibility
 accessories: accessoriez
+accompanying: accompanyin
 accomplished: accomplishd
 according: accordin
 account: akownt
@@ -31,6 +33,7 @@ addresses: addressez
 adds: addz
 administration: administrashun
 admission: admishun
+admitted: admittd
 adopters: adopterz
 advanced: advancd
 advertisers: advertiserz
@@ -77,6 +80,7 @@ anticipation: anticipashun
 anything: anythin
 aperature: aperschur
 apologies: apologiez
+appalling: appallin
 appealed: appeald
 appeared: appeard
 appears: appearz
@@ -91,6 +95,7 @@ archive: archiv
 are: r
 argued: argud
 arising: arisin
+arrived: arrivd
 articles: articlez
 asisted: assistd
 asked: askd
@@ -110,6 +115,7 @@ attacker: attackr
 attacks: attackz
 attempted: attemptd
 attempting: attemptin
+attendees: attendeez
 attention: attenshun
 attitudes: attitudez
 authentication: authenticashun
@@ -234,6 +240,7 @@ changes: changez
 changing: changin
 channels: channelz
 characters: characterz
+charged: chargd
 charges: chargez
 charging: chargin
 chatter: chattr
@@ -421,6 +428,7 @@ described: describd
 describes: describez
 description: descripshun
 descriptions: descripshuns
+deserved: deservd
 deserves: deservez
 designed: designd
 designer: designr
@@ -437,6 +445,7 @@ determined: determind
 developed: developd
 developer: developr
 developers: developrz
+developing: developin
 devices: devicez
 "didn't": didnt
 died: did
@@ -628,6 +637,7 @@ feels: feelz
 fees: feez
 fever: fevr
 fewer: fewr
+fiddling: fiddlin
 figures: figurez
 figuring: figurin
 filed: fild
@@ -635,12 +645,14 @@ files: filez
 filter: filtr
 financial: finanshul
 finder: findr
+finding: findin
 fingers: fingerz
 finished: finishd
 fired: fird
 first: furst
 fitness: fitnes
 fits: fitz
+fiver: fivr
 fixed: fixd
 fixes: fixez
 fixing: fixin
@@ -839,6 +851,7 @@ informed: informd
 infuriating: infriatin
 injection: injecshun
 innocent: innosent
+inquirer: inquirr
 inspection: inspecshun
 inspiration: inspirashun
 inspired: inspird
@@ -846,6 +859,7 @@ inspiring: inspirin
 installation: installashun
 installations: installashuns
 installed: installd
+installer: installr
 installing: installin
 instruction: instrucshun
 instructions: instrucshuns
@@ -874,6 +888,7 @@ investors: investorz
 invokes: invokez
 involved: involvd
 iphone: ifone
+iphonedrive: ifonedrive
 iphones: ifonez
 iphoto: ifoto
 ipods: ipodz
@@ -925,6 +940,7 @@ laboratories: laboratoriez
 labs: labz
 ladies: ladiez
 landed: landd
+laptops: laptopz
 larger: largr
 laser: lazr
 later: latr
@@ -1214,6 +1230,7 @@ phill: fill
 philosophy: filosofy
 phone: fone
 phones: fonez
+photo: foto
 photograph: fotograf
 photographers: fotografers
 photographs: fotografs
@@ -1228,6 +1245,7 @@ picked: pickd
 picking: pickin
 picks: pickz
 pictures: picturez
+pieces: piecez
 pinching: pinchin
 pirated: piratd
 places: placez
@@ -1252,6 +1270,7 @@ polling: pollin
 pondering: ponderin
 pops: popz
 portals: portalz
+ported: portd
 portion: porshun
 portions: porshuns
 ports: portz
@@ -1273,13 +1292,15 @@ predicted: predictd
 predicting: predictin
 prediction: predicshun
 prefer: prefr
-preferences: preferences
+preferences: preferencez
 preferred: preferrd
+prefs: prefz
 preparation: preparashun
 preparations: preparashuns
 preprocessing: preprocessin
 presentation: presentashun
 presentations: presentashuns
+presention: presenshun
 president: prezident
 presidential: presidenshul
 press: pres
@@ -1333,6 +1354,7 @@ pulled: pulld
 pulling: pullin
 pumping: pumpin
 purchased: purchasd
+purported: purportd
 purposes: purposez
 pursuing: pursuin
 pushed: pushd
@@ -1342,8 +1364,9 @@ puutting: puttin
 quarter: quartr
 quarters: quarterz
 question: queshun
-questions: quesshuns
+questions: queshuns
 queued: queud
+quicksilver: quicksilvr
 quitting: quittin
 radioactive: radioactiv
 rails: railz
@@ -1468,6 +1491,7 @@ sans: sanz
 sarbanes: sarbanez
 satisfaction: satisfacshun
 satisfying: satisfyin
+saturday: katurdai
 saving: savin
 savviness: savvines
 say: sai
@@ -1496,7 +1520,10 @@ seamless: seamles
 searches: searchez
 searching: searchin
 seating: seatin
+seats: seatz
 seconds: secondz
+secret: seekret
+secrets: secretz
 section: secshun
 sections: secshuns
 see: c
@@ -1603,6 +1630,7 @@ speculation: speculashun
 specutlitve: speculativ
 speed: sped
 spends: spendz
+spoilers: spoilerz
 sponsoring: sponsorin
 sporting: sportin
 spreading: spreadin
@@ -1635,6 +1663,7 @@ sticking: stickin
 stocked: stockd
 stocks: stockz
 stored: stord
+stores: storez
 stories: storiez
 strained: straind
 strapped: strappd
@@ -1733,6 +1762,7 @@ thinking: thinkin
 thinnes: thinnes
 this: dis
 those: dose
+thought: thot
 thoughts: thoughtz
 thousands: thousandz
 three: "3"
@@ -1741,6 +1771,7 @@ thriving: thrivin
 through: thru
 throwing: throwin
 thursday: thursdai
+tiles: tilez
 time: tiem
 times: tiems
 timing: timin
@@ -1753,6 +1784,7 @@ tomorrow: "2morrow"
 tonight: tonite
 too: "2"
 tools: toolz
+topics: topicz
 tossup: tosup
 touches: touchez
 touted: toutd
@@ -1789,6 +1821,7 @@ trying: tryin
 tuesday: tuesdai
 turned: turnd
 turns: turnz
+tweaking: tweakin
 tweeted: tweetd
 tweets: tweetz
 twitter: twittr
