@@ -8,7 +8,7 @@
 
 # You need to edit these values.
 
-DICT_NAME		=	"LOLspeak Dictionary"
+DICT_NAME		=	"LOLspeak"
 DICT_SRC_PATH		=	MyDictionary.xml
 CSS_PATH		=	MyDictionary.css
 PLIST_PATH		=	MyInfo.plist
