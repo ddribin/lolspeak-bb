@@ -35,6 +35,7 @@ administration: administrashun
 admission: admishun
 admitted: admittd
 adopters: adopterz
+ads: adz
 advanced: advancd
 advertisers: advertiserz
 advertising: advertisin
@@ -80,6 +81,7 @@ anticipation: anticipashun
 anything: anythin
 aperature: aperschur
 apologies: apologiez
+apostrophe: apostrofe
 appalling: appallin
 appealed: appeald
 appeared: appeard
@@ -110,6 +112,7 @@ assuming: assumin
 assumption: assumpshun
 astonishing: astonishin
 astounding: astoundin
+atrophy: atrofy
 attached: attachd
 attacker: attackr
 attacks: attackz
@@ -165,6 +168,7 @@ better: bettr
 between: tween
 big: hooj
 bigger: biggr
+billboards: billboardz
 billed: billd
 binaries: binariez
 birthday: birfdai
@@ -215,6 +219,7 @@ bye: kthxbye
 cables: cablez
 calculated: calculatd
 called: calld
+calling: callin
 calls: callz
 candidates: candidatez
 canned: cannd
@@ -341,6 +346,7 @@ consummated: consummatd
 contacted: contactd
 contains: containz
 contents: contentz
+continued: continud
 continues: continuez
 contradiction: contradicshun
 contrived: contrivd
@@ -418,6 +424,7 @@ delivering: deliverin
 delivers: deliverz
 demanding: demandin
 demographics: demographicz
+demos: demoz
 denver: denvr
 denying: denyin
 dependencies: dependenciez
@@ -574,6 +581,7 @@ essential: essenshul
 established: establishd
 establishing: establishin
 ether: ethr
+euphemisms: eufemisms
 evaluating: evaluatin
 eventually: evenshully
 ever: evr
@@ -626,6 +634,7 @@ fans: fanz
 fascinating: fascintatin
 faster: fastr
 fastscripts: fastscriptz
+feathers: featherz
 feature: feachur
 featured: featurd
 features: featurez
@@ -782,11 +791,13 @@ heroes: heroez
 hi: "oh hai"
 higher: highr
 highlight: highlite
+highlighting: highlightin
 highlights: highlightz
 himself: him
 hints: hintz
 hired: hird
 his: hims
+hits: hitz
 holder: holdr
 holders: holderz
 holding: holdin
@@ -799,6 +810,7 @@ hopelessly: hopelesly
 hosting: hostin
 hours: hourz
 house: houz
+hovering: hoverin
 however: howevr
 hughes: hughez
 humorless: humorles
@@ -806,6 +818,7 @@ hundred: hundrd
 hundreds: hundredz
 hunger: hungr
 hurdles: hurdlez
+hurts: hurtz
 "i'm": me
 "i've": "i has"
 icons: iconz
@@ -863,6 +876,7 @@ installer: installr
 installing: installin
 instruction: instrucshun
 instructions: instrucshuns
+integrated: integratd
 integrates: integratez
 integration: integrashn
 intended: intendd
@@ -1019,6 +1033,7 @@ making: makin
 malicious: malishus
 manager: managr
 managers: managerz
+manages: managez
 managing: managin
 manipulation: manipulashun
 manning: manning
@@ -1233,6 +1248,7 @@ phones: fonez
 photo: foto
 photograph: fotograf
 photographers: fotografers
+photographic: fotografic
 photographs: fotografs
 photonic: fotonic
 photos: fotos
@@ -1352,6 +1368,7 @@ publishes: publishez
 publishing: publishin
 pulled: pulld
 pulling: pullin
+pulls: pullz
 pumping: pumpin
 purchased: purchasd
 purported: purportd
@@ -1441,6 +1458,7 @@ requirements: requirementz
 requires: requirez
 requiring: requirin
 resentations: presentashuns
+residents: residentz
 resisting: resistn
 resolution: resolushun
 resolved: resolvd
@@ -1477,6 +1495,7 @@ robotics: roboticz
 rolling: rollin
 rotation: rotashun
 rows: rowz
+ruffling: rufflin
 rugged: ruggd
 rules: rulez
 rumored: rumord
@@ -1487,6 +1506,7 @@ said: sed
 sales: salez
 sampling: samplin
 sanctioned: sancshund
+sandwiches: sandwichez
 sans: sanz
 sarbanes: sarbanez
 satisfaction: satisfacshun
@@ -1508,6 +1528,7 @@ schizophrenia: schizofrenia
 schools: schoolz
 score: skor
 scored: scord
+screencasting: screencastin
 screenshots: screenshotz
 screwed: screwd
 screws: screwz
@@ -1829,6 +1850,7 @@ two: "2"
 tying: tyin
 typing: typin
 typograhy: tyopgrafy
+typography: typografy
 unanchored: unanchord
 unapproved: unapprovd
 unboxing: unboxin
@@ -1849,6 +1871,7 @@ unlocking: unlockin
 unnamed: unnamd
 unsolicited: unsolicitd
 until: til
+unveiled: unveild
 unwise: unwize
 upcoming: upcomin
 updated: updatd
@@ -1919,6 +1942,7 @@ welcome: welcom
 were: wuz
 "weren't": "wuz not"
 what: wut
+whatsoever: whatsoevr
 whenever: whenevr
 where: wer
 whether: whethr
