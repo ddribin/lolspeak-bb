@@ -6,3 +6,4 @@ apple_dictionary/MyDictionary.xml
 ^ruby/lib/lolspeak/tranzlator\.yml$
 \.rake_tasks
 ^scratch
+\.DS_Store
