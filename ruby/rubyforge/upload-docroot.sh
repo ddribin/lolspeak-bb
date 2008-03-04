@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rsync -azv rubyforge/docroot/ ddribin@rubyforge.org:/var/www/gforge-projects/lolspeak/
+rsync -azv rubyforge/docroot/ rubyforge.org:/var/www/gforge-projects/lolspeak/
