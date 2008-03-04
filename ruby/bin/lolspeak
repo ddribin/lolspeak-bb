@@ -32,6 +32,7 @@ $KCODE = 'u'
 require 'lolspeak'
 require 'optparse'
 require 'ostruct'
+require 'set'
 
 class LOLspeakApp
   COMMAND = File.basename($0)
@@ -42,6 +43,8 @@ class LOLspeakApp
     @options = OpenStruct.new
     @options.inputFile = nil
     @options.xml = false
+    @options.try_heuristics = false
+    @options.heuristics_exclude = Set.new
   end
   
   def run(argv)
@@ -69,6 +72,19 @@ class LOLspeakApp
       opts.on("-x", "--xml", "Parse text as XML") do |fileName|
         @options.xml = true
       end
+
+      opts.on("-H", "--heuristics", "Enable heuristics") do
+        @options.try_heuristics = true
+      end
+
+      opts.on("-X", "--heuristics-exclude FILE",
+        "List of words excluded from heuristics") do |path|
+        @options.try_heuristics = true
+        excludes = @options.heuristics_exclude
+        File.open(path) do |f|
+          f.each { |word| excludes.add(word.chomp) }
+        end
+      end
       
       opts.on_tail("-h", "--help", "Show a help message") do
         puts opts
@@ -86,6 +102,12 @@ class LOLspeakApp
   end
   
   def main(argv)
+    if @options.try_heuristics
+      LOLspeak.default_tranzlator.trace = true
+      LOLspeak.default_tranzlator.try_heuristics = true
+      LOLspeak.default_tranzlator.heuristics_exclude = @options.heuristics_exclude
+    end
+
     if argv.length == 0 and @options.inputFile.nil?
       @options.inputFile = "-"
     end
