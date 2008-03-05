@@ -160,14 +160,18 @@ module LOLspeak
     #
     def translate_xml_element!(xml_element, &filter)
       xml_element.texts.each do |text|
-        string = REXML::Text::unnormalize(text.to_s)
+        string = text.to_s
+        string = REXML::Text::unnormalize(string)
         string = self.translate_words(string) do |w|
           w = REXML::Text::normalize(w)
           w = filter.call(w) if !filter.nil?
           w
         end
-        new_text = REXML::Text.new(string, true, nil, true)
-        text.replace_with(new_text)
+        begin
+          new_text = REXML::Text.new(string, true, nil, true)
+          text.replace_with(new_text)
+        rescue
+        end
       end
     end
 

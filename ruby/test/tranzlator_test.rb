@@ -108,6 +108,12 @@ class TranzlatorTest < Test::Unit::TestCase
       t.translate_xml_string("<b>&nbsp;hi</b>")
   end
   
+  def test_tranzlate_xml_string_with_invalid_ampersand
+    t = new_tranzlator
+    assert_equal "<b>dungeons &amp; dragons</b>",
+      t.translate_xml_string("<b>dungeons &amp; dragons</b>")
+  end
+  
   def test_tranzlate_xml_string_escape
     t = new_tranzlator
     assert_equal "<b>f&amp;#^bar</b>",
